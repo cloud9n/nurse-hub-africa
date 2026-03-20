@@ -7,8 +7,8 @@ export const NAV_ITEMS: NavItem[] = [
   { label: 'About Us', path: '/about' },
   { label: 'Programmes', path: '/programmes' },
   { label: 'Get Involved', path: '/get-involved' },
-  { label: 'Blog', path: '/blog' },
-  { label: 'Events', path: '/events' },
+  // { label: 'Blog', path: '/blog' },
+  // { label: 'Events', path: '/events' },
   { label: 'Contact', path: '/contact' },
 ];
 
@@ -58,21 +58,21 @@ export const PROGRAMMES: Programme[] = [
     title: 'Training Workshops & Webinars',
     description: 'Professional development sessions covering clinical skills, leadership, and healthcare innovation.',
     category: 'Training',
-    image: 'https://images.unsplash.com/photo-1576091160550-2173dba999ef?auto=format&fit=crop&w=800&q=80',
+    image: '/assets/images/training_workshop.png',
   },
   {
     id: '2',
     title: 'Mentorship Programme',
     description: 'Connecting experienced nursing leaders with students and early-career professionals.',
     category: 'Mentorship',
-    image: 'https://images.unsplash.com/photo-1551836022-d5d88e9218df?auto=format&fit=crop&w=800&q=80',
+    image: '/assets/images/mentorship_nurse.png',
   },
   {
     id: '3',
     title: 'Community Outreach',
     description: 'Providing healthcare services and health education to underserved populations across the continent.',
     category: 'Outreach',
-    image: 'https://images.unsplash.com/photo-1488521787991-ed7bbaae773c?auto=format&fit=crop&w=800&q=80',
+    image: '/assets/images/community_outreach.png',
   },
 ];
 
@@ -81,13 +81,13 @@ export const TESTIMONIALS: Testimonial[] = [
     name: 'Sarah Mensah',
     role: 'Student Nurse, Ghana',
     quote: 'The mentorship programme changed my career trajectory. I feel more confident and prepared for the challenges ahead.',
-    image: 'https://images.unsplash.com/photo-1531123897727-8f129e1688ce?auto=format&fit=crop&w=200&h=200&q=80',
+    image: 'https://images.unsplash.com/photo-1551076805-e1869033e561?auto=format&fit=crop&w=400&h=400&q=80',
   },
   {
     name: 'Dr. Kofi Adu',
     role: 'Healthcare Partner',
     quote: 'Nurse Hub Africa is bridging a critical gap in African healthcare. Their commitment to excellence is inspiring.',
-    image: 'https://images.unsplash.com/photo-1537368910025-700350fe46c7?auto=format&fit=crop&w=200&h=200&q=80',
+     image: 'https://images.unsplash.com/photo-1551076805-e1869033e561?auto=format&fit=crop&w=400&h=400&q=80',
   },
 ];
 
@@ -98,7 +98,7 @@ export const BLOG_POSTS: BlogPost[] = [
     excerpt: 'Exploring how technology and innovation are transforming healthcare delivery across the continent.',
     date: 'March 15, 2026',
     category: 'Innovation',
-    image: 'https://images.unsplash.com/photo-1584432810601-6c7f27d2362b?auto=format&fit=crop&w=800&q=80',
+    image: 'https://images.unsplash.com/photo-1576091160550-2173dba999ef?auto=format&fit=crop&w=800&q=80',
   },
   {
     id: '2',
@@ -106,7 +106,7 @@ export const BLOG_POSTS: BlogPost[] = [
     excerpt: 'Why policy reform is essential for retaining nursing talent in African healthcare systems.',
     date: 'March 10, 2026',
     category: 'Advocacy',
-    image: 'https://images.unsplash.com/photo-1581056771107-24ca5f033842?auto=format&fit=crop&w=800&q=80',
+    image: 'https://images.unsplash.com/photo-1579684385127-1ef15d508118?auto=format&fit=crop&w=800&q=80',
   },
 ];
 

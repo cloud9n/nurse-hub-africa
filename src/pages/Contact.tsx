@@ -1,8 +1,25 @@
-import React from 'react';
+import React, { useState } from 'react';
 import { motion } from 'motion/react';
-import { Mail, MapPin, Phone, Instagram, Send, MessageCircle } from 'lucide-react';
+import { Mail, MapPin, Phone, Instagram, Send, MessageCircle, CheckCircle, Loader2 } from 'lucide-react';
 
 const Contact = () => {
+  const [isSubmitting, setIsSubmitting] = useState(false);
+  const [isSubmitted, setIsSubmitted] = useState(false);
+
+  const handleSubmit = (e: React.FormEvent) => {
+    e.preventDefault();
+    setIsSubmitting(true);
+    // Simulate API call
+    setTimeout(() => {
+      setIsSubmitting(false);
+      setIsSubmitted(true);
+      // Reset after 5 seconds
+      setTimeout(() => {
+        setIsSubmitted(false);
+      }, 5000);
+    }, 1500);
+  };
+
   return (
     <main className="pt-24">
       {/* Hero */}
@@ -95,51 +112,88 @@ const Contact = () => {
               className="bg-warm-white p-10 md:p-12 rounded-[3rem] border border-gray-100 shadow-xl"
             >
               <h3 className="text-2xl font-bold text-navy mb-8 text-center">Send a Message</h3>
-              <form className="space-y-6">
-                <div className="grid grid-cols-1 md:grid-cols-2 gap-6">
-                  <div className="space-y-2">
-                    <label className="text-sm font-bold text-navy ml-1">Full Name</label>
-                    <input
-                      type="text"
-                      placeholder="John Doe"
-                      className="w-full px-6 py-4 rounded-2xl bg-white border border-gray-100 focus:outline-none focus:border-primary"
-                    />
+              
+              {isSubmitted ? (
+                <motion.div
+                  initial={{ opacity: 0, scale: 0.8 }}
+                  animate={{ opacity: 1, scale: 1 }}
+                  className="py-12 text-center"
+                >
+                  <div className="w-20 h-20 bg-green-100 text-green-600 rounded-full flex items-center justify-center mx-auto mb-6">
+                    <CheckCircle className="w-12 h-12" />
                   </div>
-                  <div className="space-y-2">
-                    <label className="text-sm font-bold text-navy ml-1">Email Address</label>
-                    <input
-                      type="email"
-                      placeholder="john@example.com"
-                      className="w-full px-6 py-4 rounded-2xl bg-white border border-gray-100 focus:outline-none focus:border-primary"
-                    />
+                  <h4 className="text-2xl font-bold text-navy mb-2">Message Sent!</h4>
+                  <p className="text-gray-600">Thank you for reaching out. We've received your message and will respond shortly.</p>
+                  <button
+                    onClick={() => setIsSubmitted(false)}
+                    className="mt-8 text-primary font-bold hover:underline"
+                  >
+                    Send another message
+                  </button>
+                </motion.div>
+              ) : (
+                <form onSubmit={handleSubmit} className="space-y-6">
+                  <div className="grid grid-cols-1 md:grid-cols-2 gap-6">
+                    <div className="space-y-2">
+                      <label className="text-sm font-bold text-navy ml-1">Full Name</label>
+                      <input
+                        required
+                        type="text"
+                        placeholder="John Doe"
+                        className="w-full px-6 py-4 rounded-2xl bg-white border border-gray-100 focus:outline-none focus:border-primary"
+                      />
+                    </div>
+                    <div className="space-y-2">
+                      <label className="text-sm font-bold text-navy ml-1">Email Address</label>
+                      <input
+                        required
+                        type="email"
+                        placeholder="john@example.com"
+                        className="w-full px-6 py-4 rounded-2xl bg-white border border-gray-100 focus:outline-none focus:border-primary"
+                      />
+                    </div>
                   </div>
-                </div>
 
-                <div className="space-y-2">
-                  <label className="text-sm font-bold text-navy ml-1">Subject</label>
-                  <select className="w-full px-6 py-4 rounded-2xl bg-white border border-gray-100 focus:outline-none focus:border-primary appearance-none">
-                    <option>General Enquiry</option>
-                    <option>Partnership</option>
-                    <option>Volunteering</option>
-                    <option>Membership</option>
-                    <option>Donation</option>
-                  </select>
-                </div>
+                  <div className="space-y-2">
+                    <label className="text-sm font-bold text-navy ml-1">Subject</label>
+                    <select className="w-full px-6 py-4 rounded-2xl bg-white border border-gray-100 focus:outline-none focus:border-primary appearance-none">
+                      <option>General Enquiry</option>
+                      <option>Partnership</option>
+                      <option>Volunteering</option>
+                      <option>Membership</option>
+                      <option>Donation</option>
+                    </select>
+                  </div>
 
-                <div className="space-y-2">
-                  <label className="text-sm font-bold text-navy ml-1">Message</label>
-                  <textarea
-                    rows={5}
-                    placeholder="How can we help you?"
-                    className="w-full px-6 py-4 rounded-2xl bg-white border border-gray-100 focus:outline-none focus:border-primary resize-none"
-                  ></textarea>
-                </div>
+                  <div className="space-y-2">
+                    <label className="text-sm font-bold text-navy ml-1">Message</label>
+                    <textarea
+                      required
+                      rows={5}
+                      placeholder="How can we help you?"
+                      className="w-full px-6 py-4 rounded-2xl bg-white border border-gray-100 focus:outline-none focus:border-primary resize-none"
+                    ></textarea>
+                  </div>
 
-                <button className="w-full bg-navy text-white py-5 rounded-full font-bold text-xl hover:bg-primary transition-all flex items-center justify-center group shadow-xl">
-                  Send Message
-                  <Send className="ml-2 w-5 h-5 group-hover:translate-x-1 group-hover:-translate-y-1 transition-transform" />
-                </button>
-              </form>
+                  <button
+                    disabled={isSubmitting}
+                    type="submit"
+                    className="w-full bg-navy text-white py-5 rounded-full font-bold text-xl hover:bg-primary transition-all flex items-center justify-center group shadow-xl disabled:opacity-70"
+                  >
+                    {isSubmitting ? (
+                      <>
+                        <Loader2 className="w-5 h-5 animate-spin mr-2" />
+                        <span>Sending...</span>
+                      </>
+                    ) : (
+                      <>
+                        <span>Send Message</span>
+                        <Send className="ml-2 w-5 h-5 group-hover:translate-x-1 group-hover:-translate-y-1 transition-transform" />
+                      </>
+                    )}
+                  </button>
+                </form>
+              )}
             </motion.div>
           </div>
         </div>
@@ -147,7 +201,6 @@ const Contact = () => {
 
       {/* Map Section */}
       <section className="h-[500px] w-full bg-gray-100 relative grayscale hover:grayscale-0 transition-all duration-700">
-        {/* Placeholder for Google Map */}
         <div className="absolute inset-0 flex items-center justify-center">
           <div className="text-center">
             <MapPin className="w-12 h-12 text-primary mx-auto mb-4 animate-bounce" />

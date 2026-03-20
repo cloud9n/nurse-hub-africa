@@ -26,11 +26,11 @@ export const Navbar = () => {
       <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
         <div className="flex justify-between items-center">
           <Link to="/" className="flex items-center space-x-2">
-            <div className="bg-primary p-2 rounded-lg">
-              <Heart className="w-6 h-6 text-white" />
+            <div className="w-10 h-10 rounded-lg overflow-hidden flex items-center justify-center bg-white shadow-sm border border-gray-100">
+              <img src="/logo/logo.jpeg" alt="Nurse Hub Africa Logo" className="w-full h-full object-contain" />
             </div>
-            <span className={`font-bold text-xl tracking-tight ${scrolled ? 'text-navy' : 'text-navy'}`}>
-              NURSE HUB <span className="text-primary">AFRICA</span>
+            <span className={`font-bold text-xl tracking-tight transition-colors ${scrolled ? 'text-navy' : 'text-white'}`}>
+              Nurse <span className={scrolled ? 'text-primary' : 'text-white/80'}>Hub Africa</span>
             </span>
           </Link>
 
@@ -40,8 +40,10 @@ export const Navbar = () => {
               <Link
                 key={item.path}
                 to={item.path}
-                className={`text-sm font-medium transition-colors hover:text-primary ${
-                  location.pathname === item.path ? 'text-primary' : 'text-navy'
+                className={`text-sm font-medium transition-colors ${
+                  scrolled 
+                    ? (location.pathname === item.path ? 'text-primary' : 'text-navy hover:text-primary')
+                    : (location.pathname === item.path ? 'text-white' : 'text-white/70 hover:text-white')
                 }`}
               >
                 {item.label}
@@ -59,7 +61,7 @@ export const Navbar = () => {
           <div className="md:hidden flex items-center">
             <button
               onClick={() => setIsOpen(!isOpen)}
-              className="text-navy p-2 focus:outline-none"
+              className={`transition-colors p-2 focus:outline-none ${scrolled ? 'text-navy' : 'text-white'}`}
             >
               {isOpen ? <X className="w-6 h-6" /> : <Menu className="w-6 h-6" />}
             </button>

@@ -1,15 +1,23 @@
-import React from 'react';
+import React, { useState } from 'react';
 import { motion } from 'motion/react';
-import { ArrowRight } from 'lucide-react';
+import { ArrowRight, Award } from 'lucide-react';
 import { Link } from 'react-router-dom';
+import { FormModal } from './FormModal';
 
 export const Hero = () => {
+  const [modalOpen, setModalOpen] = useState(false);
+
   return (
     <section className="relative min-h-screen flex items-center pt-20 overflow-hidden">
+      <FormModal
+        isOpen={modalOpen}
+        onClose={() => setModalOpen(false)}
+        type="member"
+      />
       {/* Background Image with Overlay */}
       <div className="absolute inset-0 z-0">
         <img
-          src="https://images.unsplash.com/photo-1576765608535-5f04d1e3f289?auto=format&fit=crop&w=1920&q=80"
+          src="/assets/images/hero_nurses.png"
           alt="African Nurses"
           className="w-full h-full object-cover"
           referrerPolicy="no-referrer"
@@ -24,9 +32,9 @@ export const Hero = () => {
             animate={{ opacity: 1, x: 0 }}
             transition={{ duration: 0.6 }}
           >
-            <span className="inline-block py-1 px-3 rounded-full bg-primary/20 border border-primary/30 text-primary font-semibold text-xs uppercase tracking-widest mb-6">
+            {/* <span className="inline-block py-1 px-3 rounded-full bg-primary/20 border border-primary/30 text-primary font-semibold text-xs uppercase tracking-widest mb-6">
               Empowering African Nurses
-            </span>
+            </span> */}
             <h1 className="text-5xl md:text-7xl font-bold text-white leading-tight mb-6">
               Fostering <span className="text-primary italic">Excellence</span> in African Healthcare
             </h1>
@@ -34,13 +42,13 @@ export const Hero = () => {
               Nurse Hub Africa is a Pan-African platform dedicated to bridging critical gaps in professional development, capacity building, and healthcare innovation.
             </p>
             <div className="flex flex-col sm:flex-row gap-4">
-              <Link
-                to="/get-involved"
+              <button
+                onClick={() => setModalOpen(true)}
                 className="bg-primary text-white px-8 py-4 rounded-full font-bold text-lg flex items-center justify-center hover:bg-opacity-90 transition-all shadow-xl hover:shadow-primary/20 group"
               >
                 Join Our Community
                 <ArrowRight className="ml-2 w-5 h-5 group-hover:translate-x-1 transition-transform" />
-              </Link>
+              </button>
               <Link
                 to="/about"
                 className="bg-white/10 backdrop-blur-md border border-white/20 text-white px-8 py-4 rounded-full font-bold text-lg flex items-center justify-center hover:bg-white/20 transition-all"
@@ -72,5 +80,3 @@ export const Hero = () => {
     </section>
   );
 };
-
-import { Award } from 'lucide-react';

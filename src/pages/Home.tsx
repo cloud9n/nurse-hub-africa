@@ -58,7 +58,7 @@ const Home = () => {
             >
               <div className="aspect-square rounded-3xl overflow-hidden shadow-2xl">
                 <img
-                  src="https://images.unsplash.com/photo-1584432810601-6c7f27d2362b?auto=format&fit=crop&w=1000&q=80"
+                  src="/assets/images/impact_nurse.png"
                   alt="Impact"
                   className="w-full h-full object-cover"
                   referrerPolicy="no-referrer"

@@ -65,7 +65,7 @@ const About = () => {
             <div className="order-2 lg:order-1">
               <div className="aspect-video rounded-3xl overflow-hidden shadow-2xl">
                 <img
-                  src="https://images.unsplash.com/photo-1576091160550-2173dba999ef?auto=format&fit=crop&w=1000&q=80"
+                  src="/assets/images/training_workshop.png"
                   alt="Organization Background"
                   className="w-full h-full object-cover"
                   referrerPolicy="no-referrer"

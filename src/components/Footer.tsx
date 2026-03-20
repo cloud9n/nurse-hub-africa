@@ -10,8 +10,8 @@ export const Footer = () => {
           {/* Brand */}
           <div className="space-y-4">
             <div className="flex items-center space-x-2">
-              <div className="bg-primary p-2 rounded-lg">
-                <Heart className="w-6 h-6 text-white" />
+              <div className="w-10 h-10 rounded-lg overflow-hidden flex items-center justify-center bg-white shadow-sm border border-navy/10">
+                <img src="/logo/logo.jpeg" alt="Nurse Hub Africa Logo" className="w-full h-full object-contain" />
               </div>
               <span className="font-bold text-xl tracking-tight">
                 NURSE HUB <span className="text-primary">AFRICA</span>

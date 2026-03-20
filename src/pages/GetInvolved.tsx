@@ -1,8 +1,12 @@
-import React from 'react';
+import React, { useState } from 'react';
 import { motion } from 'motion/react';
 import { UserPlus, HandHelping, Handshake, Heart, ArrowRight } from 'lucide-react';
+import { FormModal } from '../components/FormModal';
 
 const GetInvolved = () => {
+  const [modalOpen, setModalOpen] = useState(false);
+  const [formType, setFormType] = useState<'member' | 'volunteer' | 'partner'>('member');
+
   const options = [
     {
       title: 'Become a Member',
@@ -10,7 +14,7 @@ const GetInvolved = () => {
       icon: <UserPlus className="w-8 h-8" />,
       color: 'bg-primary',
       cta: 'Join Now',
-      link: '#'
+      type: 'member' as const
     },
     {
       title: 'Volunteer',
@@ -18,7 +22,7 @@ const GetInvolved = () => {
       icon: <HandHelping className="w-8 h-8" />,
       color: 'bg-navy',
       cta: 'Sign Up',
-      link: '#'
+      type: 'volunteer' as const
     },
     {
       title: 'Partner With Us',
@@ -26,12 +30,22 @@ const GetInvolved = () => {
       icon: <Handshake className="w-8 h-8" />,
       color: 'bg-gold',
       cta: 'Enquire',
-      link: '#'
+      type: 'partner' as const
     }
   ];
 
+  const openForm = (type: 'member' | 'volunteer' | 'partner') => {
+    setFormType(type);
+    setModalOpen(true);
+  };
+
   return (
     <main className="pt-24">
+      <FormModal
+        isOpen={modalOpen}
+        onClose={() => setModalOpen(false)}
+        type={formType}
+      />
       {/* Hero */}
       <section className="py-20 bg-warm-white relative overflow-hidden">
         <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 relative z-10 text-center">
@@ -66,7 +80,10 @@ const GetInvolved = () => {
                 </div>
                 <h3 className="text-2xl font-bold text-navy mb-4">{opt.title}</h3>
                 <p className="text-gray-600 mb-8 leading-relaxed">{opt.desc}</p>
-                <button className="w-full py-4 rounded-full border-2 border-navy text-navy font-bold hover:bg-navy hover:text-white transition-all flex items-center justify-center group">
+                <button
+                  onClick={() => openForm(opt.type)}
+                  className="w-full py-4 rounded-full border-2 border-navy text-navy font-bold hover:bg-navy hover:text-white transition-all flex items-center justify-center group"
+                >
                   {opt.cta}
                   <ArrowRight className="ml-2 w-5 h-5 group-hover:translate-x-1 transition-transform" />
                 </button>
@@ -109,7 +126,7 @@ const GetInvolved = () => {
             </div>
             <div className="flex-1 relative hidden lg:block">
               <img
-                src="https://images.unsplash.com/photo-1488521787991-ed7bbaae773c?auto=format&fit=crop&w=1000&q=80"
+                src="/assets/images/community_outreach.png"
                 alt="Support"
                 className="w-full h-full object-cover"
                 referrerPolicy="no-referrer"
