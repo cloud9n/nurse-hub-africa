@@ -151,22 +151,25 @@ const Home = () => {
       </section>
 
       {/* Programmes Preview */}
-      <section className="py-24 bg-white">
+      <section id="programmes" className="py-24 bg-white">
         <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
-          <div className="flex flex-col md:flex-row justify-between items-end mb-16 gap-6">
+          <div className="flex flex-col md:flex-row justify-between items-end mb-20 gap-6">
             <div className="max-w-2xl">
-              <h2 className="text-primary font-bold uppercase tracking-widest text-sm mb-4">What We Do</h2>
-              <h3 className="text-4xl md:text-5xl font-bold text-navy">Our Programmes</h3>
+              <h2 className="text-primary font-bold uppercase tracking-widest text-sm mb-4">How We're Transforming African Healthcare</h2>
+              <h3 className="text-4xl md:text-5xl font-bold text-navy mb-6">Our Programmes</h3>
+              <p className="text-gray-600 text-lg leading-relaxed">
+                Knowledge exchange doesn't happen by accident. It requires intentional programs, innovative technology, and unwavering commitment to impact.
+              </p>
             </div>
             <Link
               to="/programmes"
-              className="bg-navy text-white px-8 py-3 rounded-full font-bold hover:bg-primary transition-all"
+              className="bg-navy text-white px-8 py-3 rounded-full font-bold hover:bg-primary transition-all shadow-lg"
             >
               View All Programmes
             </Link>
           </div>
 
-          <div className="grid grid-cols-1 md:grid-cols-3 gap-8">
+          <div className="grid grid-cols-1 lg:grid-cols-2 gap-12">
             {PROGRAMMES.map((prog, index) => (
               <motion.div
                 key={prog.id}
@@ -174,26 +177,85 @@ const Home = () => {
                 whileInView={{ opacity: 1, y: 0 }}
                 viewport={{ once: true }}
                 transition={{ delay: index * 0.1 }}
-                className="group cursor-pointer"
+                className="group flex flex-col bg-warm-white rounded-[3rem] overflow-hidden border border-gray-100 hover:shadow-2xl transition-all duration-500"
               >
-                <div className="relative aspect-[4/5] rounded-3xl overflow-hidden mb-6">
+                <div className="relative aspect-video overflow-hidden">
                   <img
                     src={prog.image}
                     alt={prog.title}
-                    className="w-full h-full object-cover group-hover:scale-110 transition-transform duration-500"
-                    referrerPolicy="no-referrer"
+                    className="w-full h-full object-cover group-hover:scale-105 transition-transform duration-700"
                   />
-                  <div className="absolute inset-0 bg-gradient-to-t from-navy/80 via-transparent to-transparent opacity-0 group-hover:opacity-100 transition-opacity"></div>
-                  <div className="absolute top-4 left-4">
-                    <span className="bg-white/90 backdrop-blur-md text-primary px-4 py-1 rounded-full text-xs font-bold uppercase tracking-wider">
-                      {prog.category}
+                  <div className="absolute inset-0 bg-gradient-to-t from-navy/60 to-transparent"></div>
+                  <div className="absolute bottom-6 left-8">
+                    <span className="bg-white/90 backdrop-blur-md text-primary px-4 py-1.5 rounded-full text-xs font-bold uppercase tracking-wider mb-2 inline-block">
+                      {prog.eyebrow}
                     </span>
+                    <h4 className="text-3xl font-bold text-white leading-tight">
+                      {prog.title}
+                    </h4>
+                  </div>
+                  {prog.comingSoon && (
+                    <div className="absolute top-6 right-8">
+                      <span className="bg-gold text-navy px-4 py-1.5 rounded-full text-xs font-bold uppercase tracking-wider shadow-lg">
+                        Coming Q4 2026
+                      </span>
+                    </div>
+                  )}
+                </div>
+
+                <div className="p-10 flex-1 flex flex-col">
+                  <p className="text-primary font-bold text-lg mb-4 italic">
+                    "{prog.tagline}"
+                  </p>
+                  <p className="text-gray-600 mb-8 leading-relaxed">
+                    {prog.description}
+                  </p>
+
+                  {/* Program-Specific Content */}
+                  <div className="mt-auto">
+                    {prog.stats && (
+                      <div className="grid grid-cols-3 gap-4 mb-8">
+                        {prog.stats.map((stat) => (
+                          <div key={stat.label} className="bg-white p-4 rounded-2xl border border-gray-100 text-center">
+                            <p className="text-primary font-bold text-lg leading-none mb-1">{stat.value}</p>
+                            <p className="text-[10px] text-gray-500 uppercase tracking-wide font-medium">{stat.label}</p>
+                          </div>
+                        ))}
+                      </div>
+                    )}
+
+                    {prog.features && (
+                      <div className="grid grid-cols-2 gap-y-3 mb-8">
+                        {prog.features.map((feature) => (
+                          <div key={feature} className="flex items-center space-x-2 text-sm text-navy font-medium">
+                            <CheckCircle2 className="w-4 h-4 text-primary shrink-0" />
+                            <span>{feature}</span>
+                          </div>
+                        ))}
+                      </div>
+                    )}
+
+                    {prog.awardCategories && (
+                      <div className="flex flex-wrap gap-2 mb-8">
+                        {prog.awardCategories.map((cat) => (
+                          <span key={cat} className="bg-navy/5 text-navy/70 px-3 py-1 rounded-lg text-[10px] font-bold uppercase tracking-wider border border-navy/10">
+                            {cat}
+                          </span>
+                        ))}
+                      </div>
+                    )}
+
+                    <Link
+                      to={`/programmes/${prog.id}`}
+                      className="inline-flex items-center text-primary font-bold hover:underline group/link"
+                    >
+                      {prog.id === 'ubuntu-magazine' ? 'Subscribe for Launch' : 
+                       prog.id === 'awards' ? 'View Awards' :
+                       prog.id === 'nha-academy' ? 'Explore Courses' : 'Learn How It Works'}
+                      <ArrowRight className="ml-2 w-5 h-5 group-hover/link:translate-x-1 transition-transform" />
+                    </Link>
                   </div>
                 </div>
-                <h4 className="text-2xl font-bold text-navy mb-3 group-hover:text-primary transition-colors">
-                  {prog.title}
-                </h4>
-                <p className="text-gray-600 line-clamp-2">{prog.description}</p>
               </motion.div>
             ))}
           </div>

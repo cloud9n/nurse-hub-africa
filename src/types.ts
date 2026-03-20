@@ -20,9 +20,15 @@ export interface Value {
 export interface Programme {
   id: string;
   title: string;
+  tagline: string;
   description: string;
-  category: 'Training' | 'Mentorship' | 'Outreach' | 'Innovation';
+  eyebrow: string;
+  category: string;
   image: string;
+  stats?: { label: string; value: string }[];
+  features?: string[];
+  awardCategories?: string[];
+  comingSoon?: boolean;
 }
 
 export interface Testimonial {
