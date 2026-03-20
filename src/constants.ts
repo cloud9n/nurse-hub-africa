@@ -13,10 +13,9 @@ export const NAV_ITEMS: NavItem[] = [
 ];
 
 export const IMPACT_STATS: Stat[] = [
-  { label: 'Members Across Africa', value: '1000', suffix: '+' },
-  { label: 'Years of Impact', value: '8', suffix: '' },
-  { label: 'Awards Won', value: '5', suffix: '+' },
-  { label: 'Communities Reached', value: '50', suffix: '+' },
+  { label: 'African Nurses in Our Community', value: '100,000', suffix: '+' },
+  { label: 'Countries Across Africa & Diaspora', value: '54', suffix: '' },
+  { label: 'Programs Transforming Knowledge', value: '4', suffix: '' },
 ];
 
 export const VALUES: Value[] = [
@@ -54,25 +53,32 @@ export const VALUES: Value[] = [
 
 export const PROGRAMMES: Programme[] = [
   {
-    id: '1',
-    title: 'Training Workshops & Webinars',
-    description: 'Professional development sessions covering clinical skills, leadership, and healthcare innovation.',
-    category: 'Training',
+    id: 'mama-aid',
+    title: 'Mama Aid',
+    description: 'AI-powered WhatsApp navigation connecting diaspora nurses with expectant mothers across Africa for expert healthcare guidance.',
+    category: 'Digital Health',
+    image: '/assets/images/community_outreach.png',
+  },
+  {
+    id: 'nha-academy',
+    title: 'NHA Academy',
+    description: 'World-class hybrid training in Medical Aesthetics, Clinical Skills, and Leadership for career transformation.',
+    category: 'Education',
     image: '/assets/images/training_workshop.png',
   },
   {
-    id: '2',
-    title: 'Mentorship Programme',
-    description: 'Connecting experienced nursing leaders with students and early-career professionals.',
-    category: 'Mentorship',
+    id: 'ubuntu-magazine',
+    title: 'Ubuntu Magazine',
+    description: 'A platform for African nursing stories, migration guides, and innovation spotlights. Your stories, your voices.',
+    category: 'Media',
     image: '/assets/images/mentorship_nurse.png',
   },
   {
-    id: '3',
-    title: 'Community Outreach',
-    description: 'Providing healthcare services and health education to underserved populations across the continent.',
-    category: 'Outreach',
-    image: '/assets/images/community_outreach.png',
+    id: 'awards',
+    title: 'Pan-African Healthcare Awards',
+    description: 'Honoring outstanding African nurses across clinical practice, innovation, and community impact.',
+    category: 'Recognition',
+    image: '/assets/images/impact_nurse.png',
   },
 ];
 

@@ -36,10 +36,10 @@ export const Hero = () => {
               Empowering African Nurses
             </span> */}
             <h1 className="text-5xl md:text-7xl font-bold text-white leading-tight mb-6">
-              Fostering <span className="text-primary italic">Excellence</span> in African Healthcare
+              Empowering African Nurses. <span className="text-primary italic">Elevating</span> African Nursing.
             </h1>
             <p className="text-lg md:text-xl text-gray-300 mb-10 leading-relaxed">
-              Nurse Hub Africa is a Pan-African platform dedicated to bridging critical gaps in professional development, capacity building, and healthcare innovation.
+              We are a Pan-African community of 100,000+ nurses across 54 countries and the diaspora, united by one mission: connecting expertise with communities that need it most.
             </p>
             <div className="flex flex-col sm:flex-row gap-4">
               <button

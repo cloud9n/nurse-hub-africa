@@ -5,14 +5,22 @@ import { Stats } from '../components/Stats';
 import { VALUES, PROGRAMMES, TESTIMONIALS } from '../constants';
 import { ArrowRight, CheckCircle2 } from 'lucide-react';
 import { Link } from 'react-router-dom';
+import { FormModal } from '../components/FormModal';
+import { useState } from 'react';
 
 const Home = () => {
+  const [isModalOpen, setIsModalOpen] = useState(false);
   return (
     <main>
+      <FormModal
+        isOpen={isModalOpen}
+        onClose={() => setIsModalOpen(false)}
+        type="member"
+      />
       <Hero />
       <Stats />
 
-      {/* Impact Since 2018 Section */}
+      {/* Our Mission Section */}
       <section className="py-24 bg-white">
         <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
           <div className="grid grid-cols-1 lg:grid-cols-2 gap-16 items-center">
@@ -21,30 +29,19 @@ const Home = () => {
               whileInView={{ opacity: 1, x: 0 }}
               viewport={{ once: true }}
             >
-              <h2 className="text-primary font-bold uppercase tracking-widest text-sm mb-4">Our Legacy</h2>
+              <h2 className="text-primary font-bold uppercase tracking-widest text-sm mb-4">Our Narrative</h2>
               <h3 className="text-4xl md:text-5xl font-bold text-navy mb-8 leading-tight">
-                Our Impact Since 2018
+                Connecting African Nurses Worldwide
               </h3>
-              <p className="text-gray-600 mb-8 text-lg leading-relaxed">
-                Since its founding, Nurse Hub Africa has achieved significant milestones that demonstrate its growing influence across the continent and beyond.
+              <p className="text-gray-600 mb-6 text-lg leading-relaxed">
+                Nurse Hub Africa exists because we saw something powerful: African nurses possess extraordinary expertise, earned through rigorous training and practice across the globe. Yet this knowledge wasn't flowing back to the communities where it could save lives and transform healthcare systems.
               </p>
-              <div className="space-y-4">
-                {[
-                  '1,000+ members across Africa and global diaspora',
-                  'Pan-African Healthcare Professionals Award (2019)',
-                  'Nursing Now Campaign launched in Nigeria (2019)',
-                  'UK Community Interest Company status',
-                  'International recognition as Africa’s premier nursing org'
-                ].map((item) => (
-                  <div key={item} className="flex items-center space-x-3">
-                    <CheckCircle2 className="text-primary w-6 h-6 shrink-0" />
-                    <span className="text-navy font-medium">{item}</span>
-                  </div>
-                ))}
-              </div>
+              <p className="text-gray-600 mb-8 text-lg leading-relaxed">
+                Founded in 2017, we set out to change that. Today, we're the largest Pan-African nursing community, connecting over 100,000 nurses across 54 countries and the diaspora. We don't just network—we create tangible impact through four flagship programs that promote healthcare knowledge exchange in innovative, sustainable ways.
+              </p>
               <Link
                 to="/about"
-                className="inline-flex items-center mt-10 text-primary font-bold hover:underline group"
+                className="inline-flex items-center text-primary font-bold hover:underline group"
               >
                 Read our full story
                 <ArrowRight className="ml-2 w-5 h-5 group-hover:translate-x-1 transition-transform" />
@@ -56,19 +53,67 @@ const Home = () => {
               viewport={{ once: true }}
               className="relative"
             >
-              <div className="aspect-square rounded-3xl overflow-hidden shadow-2xl">
+              <div className="aspect-square rounded-[3rem] overflow-hidden shadow-2xl">
                 <img
                   src="/assets/images/impact_nurse.png"
-                  alt="Impact"
+                  alt="African Nurses Excellence"
                   className="w-full h-full object-cover"
                   referrerPolicy="no-referrer"
                 />
               </div>
-              <div className="absolute -bottom-8 -left-8 bg-gold p-8 rounded-2xl shadow-xl hidden md:block">
-                <p className="text-navy text-4xl font-bold mb-1">100%</p>
-                <p className="text-navy/70 font-bold text-sm uppercase tracking-wider">Dedicated to Africa</p>
+              <div className="absolute -bottom-8 -left-8 bg-gold p-8 rounded-3xl shadow-xl hidden md:block">
+                <p className="text-navy text-4xl font-bold mb-1">100k+</p>
+                <p className="text-navy/70 font-bold text-sm uppercase tracking-wider">Expert Navigators</p>
               </div>
             </motion.div>
+          </div>
+        </div>
+      </section>
+
+      {/* Why It Matters Section */}
+      <section className="py-24 bg-navy relative overflow-hidden">
+        <div className="absolute inset-0 bg-[url('https://www.transparenttextures.com/patterns/cubes.png')] opacity-10"></div>
+        <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 relative z-10">
+          <div className="grid grid-cols-1 lg:grid-cols-2 gap-20 items-center">
+            <motion.div
+              initial={{ opacity: 0, y: 20 }}
+              whileInView={{ opacity: 1, y: 0 }}
+              viewport={{ once: true }}
+            >
+              <h2 className="text-primary font-bold uppercase tracking-widest text-sm mb-4">The Power of Connection</h2>
+              <h3 className="text-4xl md:text-5xl font-bold text-white mb-8">Why It Matters</h3>
+              <div className="space-y-6 text-gray-300 text-lg leading-relaxed">
+                <p>
+                  Here's what most people don't understand about healthcare in Africa: the expertise exists. African nurses working in London, Toronto, Sydney, and New York are among the best-trained healthcare professionals in the world.
+                </p>
+                <p>
+                  The problem isn't knowledge. It's distance. It's access. It's the practical barriers that prevent a nurse in Manchester from supporting her home community in Accra.
+                </p>
+                <p>
+                  That's why Nurse Hub Africa exists. We don't just connect nurses—we create systems that enable diaspora expertise to flow back home in meaningful, measurable ways.
+                </p>
+              </div>
+            </motion.div>
+            <div className="grid grid-cols-1 gap-6">
+              {[
+                { title: 'Mama Aid', desc: 'A nurse in London supports 50 mothers in Lagos via AI navigation.' },
+                { title: 'NHA Academy', desc: 'Access training across Africa previously only available abroad.' },
+                { title: 'Ubuntu Magazine', desc: 'Success stories in Nairobi inspire students in Johannesburg.' },
+                { title: 'Excellence Everywhere', desc: 'Awards ensure brilliance anywhere is recognized everywhere.' }
+              ].map((item, idx) => (
+                <motion.div
+                  key={item.title}
+                  initial={{ opacity: 0, x: 20 }}
+                  whileInView={{ opacity: 1, x: 0 }}
+                  viewport={{ once: true }}
+                  transition={{ delay: idx * 0.1 }}
+                  className="bg-white/5 backdrop-blur-md border border-white/10 p-8 rounded-3xl"
+                >
+                  <h4 className="text-primary font-bold text-xl mb-2">{item.title}</h4>
+                  <p className="text-gray-400">{item.desc}</p>
+                </motion.div>
+              ))}
+            </div>
           </div>
         </div>
       </section>
@@ -202,23 +247,40 @@ const Home = () => {
             <div className="absolute top-0 left-0 w-full h-full bg-[url('https://www.transparenttextures.com/patterns/cubes.png')] opacity-10"></div>
             <div className="relative z-10">
               <h3 className="text-4xl md:text-6xl font-bold text-white mb-8 leading-tight">
-                Ready to Join the Narrative of African Nursing?
+                Join 100,000+ African Nurses
               </h3>
               <p className="text-xl text-white/80 mb-12 max-w-2xl mx-auto">
-                Whether you're a student, a professional, or a potential partner, there's a place for you in our mission.
+                Whether you trained in Kampala or Cardiff, work in Abuja or Alberta, you belong here. We're transforming healthcare across an entire continent.
               </p>
+              
+              <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-6 mb-12 text-left">
+                {[
+                  'Exclusive training & development',
+                  'Network across 54 countries',
+                  'Mama Aid opportunities',
+                  'Career guidance & mentorship',
+                  'Recognition & awards',
+                  'Transform African healthcare'
+                ].map((benefit) => (
+                  <div key={benefit} className="flex items-center space-x-3 text-white/90">
+                    <CheckCircle2 className="w-5 h-5 text-gold shrink-0" />
+                    <span className="text-sm font-medium">{benefit}</span>
+                  </div>
+                ))}
+              </div>
+
               <div className="flex flex-col sm:flex-row justify-center gap-6">
-                <Link
-                  to="/get-involved"
+                <button
+                  onClick={() => setIsModalOpen(true)}
                   className="bg-white text-primary px-10 py-5 rounded-full font-bold text-xl hover:bg-gold hover:text-navy transition-all shadow-xl"
                 >
-                  Get Involved
-                </Link>
+                  Join Our Community (It's Free)
+                </button>
                 <Link
-                  to="/contact"
+                  to="/get-involved"
                   className="bg-navy text-white px-10 py-5 rounded-full font-bold text-xl hover:bg-opacity-90 transition-all border border-white/10"
                 >
-                  Contact Us
+                  Get Involved
                 </Link>
               </div>
             </div>
