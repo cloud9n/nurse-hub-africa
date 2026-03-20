@@ -6,10 +6,10 @@ export const NAV_ITEMS: NavItem[] = [
   { label: 'Home', path: '/' },
   { label: 'About Us', path: '/about' },
   { label: 'Programmes', path: '/programmes' },
-  { label: 'Courses', path: '/courses' },
   { label: 'Get Involved', path: '/get-involved' },
   // { label: 'Blog', path: '/blog' },
   // { label: 'Events', path: '/events' },
+  { label: 'NHA Academy', path: '/courses' },
   { label: 'Contact', path: '/contact' },
 ];
 

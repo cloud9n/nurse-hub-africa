@@ -130,7 +130,48 @@ You will graduate fully equipped to offer botulinum toxin, dermal fillers, skin 
       { q: 'Will this help me get promoted?', a: 'Many of our graduates have secured Band 7, 8a and senior management roles within 12 months of completing.' },
     ],
   },
+  {
+    id: 'skin-mastery',
+    badge: 'Beginner Friendly',
+    badgeColor: 'bg-primary/20 text-primary border border-primary/30',
+    title: 'The Skin Mastery Programme',
+    subtitle: 'From complete beginner to confident skin professional',
+    price: 'From £1,490',
+    duration: 'Self-Paced (4 Levels)',
+    students: '800+',
+    rating: 4.9,
+    reviews: 190,
+    image: '/assets/images/impact_nurse.png',
+    overview: `A structured journey from foundational knowledge to clinical mastery. No previous experience required — we take you from complete beginner to confident, qualified skin professional.\n\nThis is where successful skin professionals begin their journey. Progress through four comprehensive levels, each building on the last, until you have both the clinical skills and the business acumen to thrive.`,
+    whyChoose: [
+      'No previous experience required — open to complete beginners',
+      'Progress at your own pace through four structured levels',
+      'Covers Nigerian & international market regulations for business',
+      'Melanin-rich and diverse skin types covered throughout',
+      'From skin science to injectable techniques — all in one pathway',
+      'Includes personal branding, social media & clinic-building modules',
+    ],
+    curriculum: [
+      { module: 'Level 3 — Entry to Aesthetics', title: 'Anatomy & Physiology · Skin barrier science · Consultations & skin analysis · First Aid & Anaphylaxis · Safety in aesthetic medicine', hours: 'Foundation' },
+      { module: 'Level 4 — Advanced Skin Treatments', title: 'Professional Facials · Microneedling (Ofqual L4) · Chemical Peels (L4) · Dermaplaning · LED Therapy & Hydrofacial', hours: 'Intermediate' },
+      { module: 'Level 5 — Injectables & Aesthetics', title: "Dermal Fillers (lip, nasolabial, marionette) · Botox (glabellar, forehead, crow's feet) · Profhilo & Skin Boosters · Complication management", hours: 'Advanced' },
+      { module: 'Business & Ethics', title: 'Client consultation & consent · Nigerian market compliance · Personal branding & social media · Building a profitable clinic · Insurance & certification', hours: 'Business' },
+    ],
+    outcomes: [
+      'Ofqual-recognised qualifications at Levels 3, 4 & 5',
+      'Clinical competency across 12+ skin & injectable treatments',
+      'A fully compliant, ready-to-launch aesthetics business plan',
+      'NHA Skin Mastery certificate — recognised by insurers',
+    ],
+    faqs: [
+      { q: 'Do I need any prior experience?', a: 'None at all. Level 3 is the perfect entry point — we cover everything from scratch including skin anatomy and first aid.' },
+      { q: 'Can I join at a higher level?', a: 'Yes. If you already hold Level 3 or 4 qualifications, we can assess your prior learning and enrol you at the appropriate level.' },
+      { q: 'Is this programme relevant to the Nigerian market?', a: 'Absolutely. The Business & Ethics module specifically covers Nigerian market regulations, client expectations, and building a profitable aesthetics clinic locally.' },
+      { q: "What's included in the price?", a: 'Entry price covers Level 3. Each subsequent level is priced separately, or you can bundle all four for a discounted package price. Contact us for bundled pricing.' },
+    ],
+  },
 ];
+
 
 type Course = (typeof courses)[0];
 
