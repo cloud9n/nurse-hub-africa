@@ -5,6 +5,7 @@ import { Footer } from './components/Footer';
 import Home from './pages/Home';
 import About from './pages/About';
 import Programmes from './pages/Programmes';
+import Courses from './pages/Courses';
 import GetInvolved from './pages/GetInvolved';
 import Blog from './pages/Blog';
 import Events from './pages/Events';
@@ -31,6 +32,7 @@ export default function App() {
               <Route path="/" element={<Home />} />
               <Route path="/about" element={<About />} />
               <Route path="/programmes" element={<Programmes />} />
+              <Route path="/courses" element={<Courses />} />
               <Route path="/get-involved" element={<GetInvolved />} />
               <Route path="/blog" element={<Blog />} />
               <Route path="/events" element={<Events />} />
