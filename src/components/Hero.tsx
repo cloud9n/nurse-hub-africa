@@ -39,7 +39,7 @@ export const Hero = () => {
               Empowering African Nurses. <span className="text-primary italic">Elevating</span> African Nursing.
             </h1>
             <p className="text-lg md:text-xl text-gray-300 mb-10 leading-relaxed">
-              We are a Pan-African community of 100,000+ nurses across 54 countries and the diaspora, united by one mission: connecting expertise with communities that need it most.
+              We are a Pan-African community of 1000+ nurses across  countries and the diaspora, united by one mission: connecting expertise with communities that need it most.
             </p>
             <div className="flex flex-col sm:flex-row gap-4">
               <button

@@ -1,5 +1,6 @@
 import React from 'react';
 import { motion } from 'motion/react';
+import { Link } from 'react-router-dom';
 import { PROGRAMMES } from '../constants';
 import { ArrowRight, BookOpen, Users, HeartPulse, Lightbulb } from 'lucide-react';
 
@@ -96,10 +97,10 @@ const Programmes = () => {
                       <span>Certification and professional recognition</span>
                     </li>
                   </ul>
-                  <button className="bg-navy text-white px-8 py-4 rounded-full font-bold hover:bg-primary transition-all flex items-center group">
+                  <Link to="/contact" className="bg-navy text-white px-8 py-4 rounded-full font-bold hover:bg-primary transition-all flex items-center group w-fit">
                     Learn More & Apply
                     <ArrowRight className="ml-2 w-5 h-5 group-hover:translate-x-1 transition-transform" />
-                  </button>
+                  </Link>
                 </div>
               </motion.div>
             ))}
@@ -116,9 +117,9 @@ const Programmes = () => {
               <p className="text-xl text-white/70 mb-8">
                 We are always looking for innovative ways to support African nurses. Partner with us to launch a new initiative.
               </p>
-              <button className="bg-primary text-white px-10 py-4 rounded-full font-bold text-lg hover:bg-white hover:text-navy transition-all">
+              <Link to="/contact" className="bg-primary text-white px-10 py-4 rounded-full font-bold text-lg hover:bg-white hover:text-navy transition-all inline-block">
                 Partner With Us
-              </button>
+              </Link>
             </div>
             <div className="flex-1 w-full max-w-md">
               <div className="bg-white/5 backdrop-blur-xl p-8 rounded-3xl border border-white/10">

@@ -94,7 +94,7 @@ const Contact = () => {
                   <p className="text-white/80 text-sm">Message us on WhatsApp for quick enquiries.</p>
                 </div>
                 <a
-                  href="https://wa.me/234XXXXXXXXXX"
+                  href="https://wa.me/23480628162800"
                   target="_blank"
                   rel="noopener noreferrer"
                   className="w-14 h-14 bg-white rounded-full flex items-center justify-center text-primary hover:scale-110 transition-transform shadow-lg"

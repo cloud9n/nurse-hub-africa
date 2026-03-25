@@ -38,13 +38,13 @@ const About = () => {
                   Nurse Hub Africa was born from a simple observation that led to a powerful question.
                 </p>
                 <p>
-                  The observation: Over 100,000 African nurses work abroad—in the UK, USA, Canada, Australia, and across Europe. These aren't just any nurses. They're among the best-trained healthcare professionals in the world, having navigated rigorous international licensing and practiced in state-of-the-art facilities.
+                  The observation: Over 1000 African nurses work abroad—in the UK, USA, Canada, Australia, and across Europe. These aren't just any nurses. They're among the best-trained healthcare professionals in the world, having navigated rigorous international licensing and practiced in state-of-the-art facilities.
                 </p>
                 <p>
                   The question: What if this diaspora expertise could flow back to African communities in meaningful, sustainable ways?
                 </p>
                 <p>
-                  Founded in 2017 in Nigeria, we started as a community supporting each other through migration and practice abroad. Today, we've evolved into a movement of 100,000+ nurses across 54 countries, proving that diaspora doesn't mean disconnect—it means expanded capacity.
+                  Founded in 2017 in Nigeria, we started as a community supporting each other through migration and practice abroad. Today, we've evolved into a movement of 1000+ nurses across multiple countries, proving that diaspora doesn't mean disconnect—it means expanded capacity.
                 </p>
               </div>
             </motion.div>

@@ -12,7 +12,7 @@ HERO SECTION
 Main Headline:
 Empowering African Nurses. Elevating African Nursing.
 Subheadline:
-We are a Pan-African community of 100,000+ nurses across 54 countries and the diaspora, united by one mission: connecting expertise with communities that need it most. Through digital innovation, world-class education, storytelling, and recognition, we're transforming healthcare knowledge exchange across the continent.
+We are a Pan-African community of 1000+ nurses across multiple countries and the diaspora, united by one mission: connecting expertise with communities that need it most. Through digital innovation, world-class education, storytelling, and recognition, we're transforming healthcare knowledge exchange across the continent.
 Supporting Body Copy (Optional - below subheadline):
 Whether you're a nurse in Lagos or London, Nairobi or New York, you belong here. Join us in bridging the gap between diaspora expertise and African communities through programs that empower, educate, and elevate.
 Call-to-Action Buttons:
@@ -26,14 +26,14 @@ Connecting African Nurses Worldwide
 Opening Paragraph:
 Nurse Hub Africa exists because we saw something powerful: African nurses possess extraordinary expertise, earned through rigorous training and practice across the globe. Yet this knowledge wasn't flowing back to the communities where it could save lives and transform healthcare systems.
 
-Founded in 2017, we set out to change that. Today, we're the largest Pan-African nursing community, connecting over 100,000 nurses across 54 countries and the diaspora. We don't just network—we create tangible impact through four flagship programs that promote healthcare knowledge exchange in innovative, sustainable ways.
+Founded in 2017, we set out to change that. Today, we're the largest Pan-African nursing community, connecting over 1000 nurses across multiple countries and the diaspora. We don't just network—we create tangible impact through four flagship programs that promote healthcare knowledge exchange in innovative, sustainable ways.
 Stats Section (Display as Three Cards):
 STAT 1:
-100,000+
+1000+
 African Nurses in Our Community
 From theatre nurses to midwives, aesthetics practitioners to public health specialists—our community spans every specialty and experience level. What unites us is our African heritage and our commitment to elevating nursing across the continent.
 STAT 2:
-54 Countries
+multiple Countries
 Across Africa and the Diaspora
 Every African nation represented, plus diaspora nurses in the UK, USA, Canada, Australia, and beyond. We're not just Pan-African in name—we're truly continental in reach and impact.
 STAT 3:
@@ -58,7 +58,7 @@ Mama Aid
 Card Tagline:
 Every mama deserves expert care
 Card Description (Full):
-Nigeria: 512 maternal deaths per 100,000 births. UK: 7 per 100,000. The gap isn't knowledge—it's access.
+Nigeria: 512 maternal deaths per 1000 births. UK: 7 per 1000. The gap isn't knowledge—it's access.
 
 Mama Aid is our answer. Through AI-powered WhatsApp navigation, we connect diaspora nurses with expectant mothers across Africa. One nurse can now support 50-100 mothers instead of 5-10, because intelligent technology handles routine questions while humans focus on urgent cases and emotional support.
 
@@ -166,14 +166,14 @@ This is Nurse Hub Africa. And we're just getting started.
 
 COMMUNITY CALL-TO-ACTION SECTION
 Section Headline:
-Join 100,000+ African Nurses
+Join 1000+ African Nurses
 Section Copy:
 Whether you trained in Kampala or Cardiff, work in Abuja or Alberta, you belong here. This is your community. These are your people. And together, we're not just building careers—we're transforming healthcare across an entire continent.
 
 Membership is free. The connections are priceless. Join us today and be part of something bigger than any one of us could build alone.
 Benefits List (3 columns or icons):
 ✓ Access exclusive training and professional development
-✓ Network with nurses across 54 countries and diaspora
+✓ Network with nurses across multiple countries and diaspora
 ✓ Early access to Mama Aid navigator opportunities
 ✓ Career guidance, job opportunities, and mentorship
 ✓ Recognition through awards and magazine features
@@ -192,7 +192,7 @@ From Lagos to London to Leading Change
 Full Story Copy:
 Nurse Hub Africa was born from a simple observation that led to a powerful question.
 
-The observation: Over 100,000 African nurses work abroad—in the UK, USA, Canada, Australia, and across Europe. These aren't just any nurses. They're among the best-trained healthcare professionals in the world, having navigated rigorous international licensing, practiced in state-of-the-art facilities, and developed expertise that would be invaluable back home.
+The observation: Over 1000 African nurses work abroad—in the UK, USA, Canada, Australia, and across Europe. These aren't just any nurses. They're among the best-trained healthcare professionals in the world, having navigated rigorous international licensing, practiced in state-of-the-art facilities, and developed expertise that would be invaluable back home.
 
 The question: What if this diaspora expertise could flow back to African communities in meaningful, sustainable ways?
 
@@ -204,7 +204,7 @@ But we knew we could do more. What if connection led to impact? What if our netw
 
 In 2026, we restructured as a UK Community Interest Company—a social enterprise designed to generate sustainable revenue while ensuring every pound serves our community mission. We launched four flagship programs, each designed to promote healthcare knowledge exchange in innovative ways.
 
-Today, we serve over 100,000 African nurses across 54 countries and the diaspora. We're not just a network anymore. We're a movement. We're proving that diaspora doesn't mean disconnect—it means expanded capacity. We're showing that African nursing expertise, when properly connected and supported, can transform healthcare across an entire continent.
+Today, we serve over 1000 African nurses across multiple countries and the diaspora. We're not just a network anymore. We're a movement. We're proving that diaspora doesn't mean disconnect—it means expanded capacity. We're showing that African nursing expertise, when properly connected and supported, can transform healthcare across an entire continent.
 
 And we're just getting started.
 

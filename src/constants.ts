@@ -14,7 +14,7 @@ export const NAV_ITEMS: NavItem[] = [
 ];
 
 export const IMPACT_STATS: Stat[] = [
-  { label: 'African Nurses in Our Community', value: '100,000', suffix: '+' },
+  { label: 'African Nurses in Our Community', value: '1000', suffix: '+' },
   { label: 'Countries Across Africa & Diaspora', value: '54', suffix: '' },
   { label: 'Programs Transforming Knowledge', value: '4', suffix: '' },
 ];
@@ -120,7 +120,7 @@ export const TESTIMONIALS: Testimonial[] = [
     name: 'Dr. Kofi Adu',
     role: 'Healthcare Partner',
     quote: 'Nurse Hub Africa is bridging a critical gap in African healthcare. Their commitment to excellence is inspiring.',
-     image: 'https://images.unsplash.com/photo-1551076805-e1869033e561?auto=format&fit=crop&w=400&h=400&q=80',
+    image: 'https://images.unsplash.com/photo-1551076805-e1869033e561?auto=format&fit=crop&w=400&h=400&q=80',
   },
 ];
 

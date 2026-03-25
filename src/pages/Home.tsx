@@ -37,7 +37,7 @@ const Home = () => {
                 Nurse Hub Africa exists because we saw something powerful: African nurses possess extraordinary expertise, earned through rigorous training and practice across the globe. Yet this knowledge wasn't flowing back to the communities where it could save lives and transform healthcare systems.
               </p>
               <p className="text-gray-600 mb-8 text-lg leading-relaxed">
-                Founded in 2017, we set out to change that. Today, we're the largest Pan-African nursing community, connecting over 100,000 nurses across 54 countries and the diaspora. We don't just network—we create tangible impact through four flagship programs that promote healthcare knowledge exchange in innovative, sustainable ways.
+                Founded in 2017, we set out to change that. Today, we're the largest Pan-African nursing community, connecting over 1000 nurses across multiple countries and the diaspora. We don't just network—we create tangible impact through four flagship programs that promote healthcare knowledge exchange in innovative, sustainable ways.
               </p>
               <Link
                 to="/about"
@@ -62,7 +62,7 @@ const Home = () => {
                 />
               </div>
               <div className="absolute -bottom-8 -left-8 bg-gold p-8 rounded-3xl shadow-xl hidden md:block">
-                <p className="text-navy text-4xl font-bold mb-1">100k+</p>
+                <p className="text-navy text-4xl font-bold mb-1">1k+</p>
                 <p className="text-navy/70 font-bold text-sm uppercase tracking-wider">Expert Navigators</p>
               </div>
             </motion.div>
@@ -246,12 +246,12 @@ const Home = () => {
                     )}
 
                     <Link
-                      to={`/programmes/${prog.id}`}
+                      to={prog.id === 'nha-academy' ? '/courses' : '/contact'}
                       className="inline-flex items-center text-primary font-bold hover:underline group/link"
                     >
-                      {prog.id === 'ubuntu-magazine' ? 'Subscribe for Launch' : 
-                       prog.id === 'awards' ? 'View Awards' :
-                       prog.id === 'nha-academy' ? 'Explore Courses' : 'Learn How It Works'}
+                      {prog.id === 'ubuntu-magazine' ? 'Subscribe for Launch' :
+                        prog.id === 'awards' ? 'View Awards' :
+                          prog.id === 'nha-academy' ? 'Explore Courses' : 'Learn How It Works'}
                       <ArrowRight className="ml-2 w-5 h-5 group-hover/link:translate-x-1 transition-transform" />
                     </Link>
                   </div>
@@ -309,16 +309,16 @@ const Home = () => {
             <div className="absolute top-0 left-0 w-full h-full bg-[url('https://www.transparenttextures.com/patterns/cubes.png')] opacity-10"></div>
             <div className="relative z-10">
               <h3 className="text-4xl md:text-6xl font-bold text-white mb-8 leading-tight">
-                Join 100,000+ African Nurses
+                Join 1000+ African Nurses
               </h3>
               <p className="text-xl text-white/80 mb-12 max-w-2xl mx-auto">
                 Whether you trained in Kampala or Cardiff, work in Abuja or Alberta, you belong here. We're transforming healthcare across an entire continent.
               </p>
-              
+
               <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-6 mb-12 text-left">
                 {[
                   'Exclusive training & development',
-                  'Network across 54 countries',
+                  'Network across m countries',
                   'Mama Aid opportunities',
                   'Career guidance & mentorship',
                   'Recognition & awards',
