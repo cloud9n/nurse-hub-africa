@@ -55,14 +55,14 @@ export const VALUES: Value[] = [
 export const PROGRAMMES: Programme[] = [
   {
     id: 'mama-aid',
-    title: 'Mama Aid',
+    title: 'Mama Aid+',
     tagline: 'Every mama deserves expert care',
     eyebrow: 'DIGITAL HEALTH NAVIGATION',
     description: 'Through AI-powered navigation, we connect diaspora nurses with expectant mothers across Africa. One nurse can now support 20-50 mothers, providing free expert healthcare guidance and life-saving triage.',
     category: 'Digital Health',
     image: '/assets/images/community_outreach.png',
     stats: [
-      { label: 'mothers per navigator', value: '50-100' },
+      { label: 'mothers per navigator', value: '20-50' },
       { label: 'per mother/month', value: '£4.50' },
       { label: 'Always. For mothers.', value: 'Free' },
     ],
