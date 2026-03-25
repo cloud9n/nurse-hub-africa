@@ -15,7 +15,7 @@ export const NAV_ITEMS: NavItem[] = [
 
 export const IMPACT_STATS: Stat[] = [
   { label: 'African Nurses in Our Community', value: '1000', suffix: '+' },
-  { label: 'Countries Across Africa & Diaspora', value: '54', suffix: '' },
+  { label: 'Countries Across Africa & Diaspora', value: '6', suffix: '+' },
   { label: 'Programs Transforming Knowledge', value: '4', suffix: '' },
 ];
 
