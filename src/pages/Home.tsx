@@ -37,7 +37,7 @@ const Home = () => {
                 Nurse Hub Africa exists because we saw something powerful: African nurses possess extraordinary expertise, earned through rigorous training and practice across the globe. Yet this knowledge wasn't flowing back to the communities where it could save lives and transform healthcare systems.
               </p>
               <p className="text-gray-600 mb-8 text-lg leading-relaxed">
-                Founded in 2017, we set out to change that. Today, we're the largest Pan-African nursing community, connecting over 1000 nurses across multiple countries and the diaspora. We don't just network—we create tangible impact through four flagship programs that promote healthcare knowledge exchange in innovative, sustainable ways.
+                Founded in 2017, we set out to change that. Today, we're the largest Pan-African nursing community, connecting over 1000 nurses across multiple countries and the diaspora. We don't just network-we create tangible impact through four flagship programs that promote healthcare knowledge exchange in innovative, sustainable ways.
               </p>
               <Link
                 to="/about"
@@ -90,7 +90,7 @@ const Home = () => {
                   The problem isn't knowledge. It's distance. It's access. It's the practical barriers that prevent a nurse in Manchester from supporting her home community in Accra.
                 </p>
                 <p>
-                  That's why Nurse Hub Africa exists. We don't just connect nurses—we create systems that enable diaspora expertise to flow back home in meaningful, measurable ways.
+                  That's why Nurse Hub Africa exists. We don't just connect nurses-we create systems that enable diaspora expertise to flow back home in meaningful, measurable ways.
                 </p>
               </div>
             </motion.div>

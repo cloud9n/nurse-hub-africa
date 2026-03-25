@@ -20,9 +20,9 @@ const courses = [
     image: '/assets/images/training_workshop.png',
     overview: `This comprehensive Level 7 programme is designed exclusively for registered nurses who want to specialise in medical aesthetics. Uniquely tailored to melanin-rich and African skin types, this course bridges the gap between clinical nursing excellence and the fast-growing aesthetics industry.
 
-You will graduate fully equipped to offer botulinum toxin, dermal fillers, skin rejuvenation treatments and more — all within a safe, evidence-based clinical framework.`,
+You will graduate fully equipped to offer botulinum toxin, dermal fillers, skin rejuvenation treatments and more - all within a safe, evidence-based clinical framework.`,
     whyChoose: [
-      'Designed for African & melanin-rich skin — no more Eurocentric-only training',
+      'Designed for African & melanin-rich skin - no more Eurocentric-only training',
       'Delivered by internationally-trained nurse practitioners with real-world experience',
       'Hybrid model: online theory + hands-on clinical practice days',
       'Small cohort sizes (max 8 per group) for personalised learning',
@@ -46,7 +46,7 @@ You will graduate fully equipped to offer botulinum toxin, dermal fillers, skin 
     faqs: [
       { q: 'Do I need to be a registered nurse?', a: 'Yes. This course is exclusively for NMC-registered nurses and midwives. It builds on your existing clinical foundation.' },
       { q: 'What are the clinic days like?', a: 'Clinic days are held at our partner training centres. You\'ll practice on models under direct supervision of experienced practitioners.' },
-      { q: 'Can I get funding or payment plans?', a: 'Yes — we offer flexible payment plans. Contact us to discuss options including NHS CPD funding routes.' },
+      { q: 'Can I get funding or payment plans?', a: 'Yes - we offer flexible payment plans. Contact us to discuss options including NHS CPD funding routes.' },
       { q: 'Is the qualification recognised internationally?', a: 'The Level 7 is UK-accredited. We also provide guidance for nurses seeking recognition in their home country.' },
     ],
   },
@@ -67,7 +67,7 @@ You will graduate fully equipped to offer botulinum toxin, dermal fillers, skin 
       'Purpose-built for diaspora nurses navigating new healthcare systems',
       'Covers UK, USA, Canada and Australian nursing frameworks',
       'Live weekly webinars with Q&A from senior nurse practitioners',
-      'Flexible scheduling — study around your shift pattern',
+      'Flexible scheduling - study around your shift pattern',
       'Certificate of Completion valued by NHS and international employers',
     ],
     curriculum: [
@@ -85,7 +85,7 @@ You will graduate fully equipped to offer botulinum toxin, dermal fillers, skin 
       'Community access to peer support network of 3,000+ nurses',
     ],
     faqs: [
-      { q: 'Is this course 100% online?', a: 'Yes — all content, assessments and live sessions are delivered online so you can study from anywhere in the world.' },
+      { q: 'Is this course 100% online?', a: 'Yes - all content, assessments and live sessions are delivered online so you can study from anywhere in the world.' },
       { q: 'Who is this course for?', a: 'Any registered nurse who has had a career break, recently migrated, or is preparing to work in a new country.' },
       { q: 'How long do I have access to content?', a: 'You have 12 months of access to all course materials after enrolment.' },
     ],
@@ -102,7 +102,7 @@ You will graduate fully equipped to offer botulinum toxin, dermal fillers, skin 
     rating: 4.9,
     reviews: 140,
     image: '/assets/images/community_outreach.png',
-    overview: `This leadership programme is built for African nurses who are ready to move beyond the bedside and into roles of influence — ward manager, matron, CNO, or healthcare entrepreneur. It blends evidence-based leadership theory with African-centred values of community and collective action.`,
+    overview: `This leadership programme is built for African nurses who are ready to move beyond the bedside and into roles of influence - ward manager, matron, CNO, or healthcare entrepreneur. It blends evidence-based leadership theory with African-centred values of community and collective action.`,
     whyChoose: [
       'African-centred leadership framework grounded in ubuntu philosophy',
       'Guest sessions from African CMOs, CNOs and healthcare CEOs',
@@ -126,7 +126,7 @@ You will graduate fully equipped to offer botulinum toxin, dermal fillers, skin 
     ],
     faqs: [
       { q: 'What level of experience do I need?', a: 'You should be a registered nurse with at least 2 years post-qualifying experience. Band 5 and above are ideal candidates.' },
-      { q: 'Are there live sessions?', a: 'Yes — fortnightly live leadership masterclasses with guest speakers. All sessions are recorded if you cannot attend live.' },
+      { q: 'Are there live sessions?', a: 'Yes - fortnightly live leadership masterclasses with guest speakers. All sessions are recorded if you cannot attend live.' },
       { q: 'Will this help me get promoted?', a: 'Many of our graduates have secured Band 7, 8a and senior management roles within 12 months of completing.' },
     ],
   },
@@ -142,29 +142,29 @@ You will graduate fully equipped to offer botulinum toxin, dermal fillers, skin 
     rating: 4.9,
     reviews: 190,
     image: '/assets/images/impact_nurse.png',
-    overview: `A structured journey from foundational knowledge to clinical mastery. No previous experience required — we take you from complete beginner to confident, qualified skin professional.\n\nThis is where successful skin professionals begin their journey. Progress through four comprehensive levels, each building on the last, until you have both the clinical skills and the business acumen to thrive.`,
+    overview: `A structured journey from foundational knowledge to clinical mastery. No previous experience required - we take you from complete beginner to confident, qualified skin professional.\n\nThis is where successful skin professionals begin their journey. Progress through four comprehensive levels, each building on the last, until you have both the clinical skills and the business acumen to thrive.`,
     whyChoose: [
-      'No previous experience required — open to complete beginners',
+      'No previous experience required - open to complete beginners',
       'Progress at your own pace through four structured levels',
       'Covers Nigerian & international market regulations for business',
       'Melanin-rich and diverse skin types covered throughout',
-      'From skin science to injectable techniques — all in one pathway',
+      'From skin science to injectable techniques - all in one pathway',
       'Includes personal branding, social media & clinic-building modules',
     ],
     curriculum: [
-      { module: 'Level 3 — Entry to Aesthetics', title: 'Anatomy & Physiology · Skin barrier science · Consultations & skin analysis · First Aid & Anaphylaxis · Safety in aesthetic medicine', hours: 'Foundation' },
-      { module: 'Level 4 — Advanced Skin Treatments', title: 'Professional Facials · Microneedling (Ofqual L4) · Chemical Peels (L4) · Dermaplaning · LED Therapy & Hydrofacial', hours: 'Intermediate' },
-      { module: 'Level 5 — Injectables & Aesthetics', title: "Dermal Fillers (lip, nasolabial, marionette) · Botox (glabellar, forehead, crow's feet) · Profhilo & Skin Boosters · Complication management", hours: 'Advanced' },
+      { module: 'Level 3 - Entry to Aesthetics', title: 'Anatomy & Physiology · Skin barrier science · Consultations & skin analysis · First Aid & Anaphylaxis · Safety in aesthetic medicine', hours: 'Foundation' },
+      { module: 'Level 4 - Advanced Skin Treatments', title: 'Professional Facials · Microneedling (Ofqual L4) · Chemical Peels (L4) · Dermaplaning · LED Therapy & Hydrofacial', hours: 'Intermediate' },
+      { module: 'Level 5 - Injectables & Aesthetics', title: "Dermal Fillers (lip, nasolabial, marionette) · Botox (glabellar, forehead, crow's feet) · Profhilo & Skin Boosters · Complication management", hours: 'Advanced' },
       { module: 'Business & Ethics', title: 'Client consultation & consent · Nigerian market compliance · Personal branding & social media · Building a profitable clinic · Insurance & certification', hours: 'Business' },
     ],
     outcomes: [
       'Ofqual-recognised qualifications at Levels 3, 4 & 5',
       'Clinical competency across 12+ skin & injectable treatments',
       'A fully compliant, ready-to-launch aesthetics business plan',
-      'NHA Skin Mastery certificate — recognised by insurers',
+      'NHA Skin Mastery certificate - recognised by insurers',
     ],
     faqs: [
-      { q: 'Do I need any prior experience?', a: 'None at all. Level 3 is the perfect entry point — we cover everything from scratch including skin anatomy and first aid.' },
+      { q: 'Do I need any prior experience?', a: 'None at all. Level 3 is the perfect entry point - we cover everything from scratch including skin anatomy and first aid.' },
       { q: 'Can I join at a higher level?', a: 'Yes. If you already hold Level 3 or 4 qualifications, we can assess your prior learning and enrol you at the appropriate level.' },
       { q: 'Is this programme relevant to the Nigerian market?', a: 'Absolutely. The Business & Ethics module specifically covers Nigerian market regulations, client expectations, and building a profitable aesthetics clinic locally.' },
       { q: "What's included in the price?", a: 'Entry price covers Level 3. Each subsequent level is priced separately, or you can bundle all four for a discounted package price. Contact us for bundled pricing.' },
@@ -215,7 +215,7 @@ const CourseCard: React.FC<CourseCardProps> = ({ course, index }) => {
                 href="/contact"
                 className="bg-primary text-white px-8 py-3 rounded-full font-bold hover:bg-opacity-90 transition-all shadow-lg flex items-center gap-2"
               >
-                Enrol Now — {course.price} <ArrowRight className="w-4 h-4" />
+                Enrol Now - {course.price} <ArrowRight className="w-4 h-4" />
               </a>
               <a
                 href="/contact"
@@ -343,7 +343,7 @@ const Courses = () => {
               Courses Built For <span className="text-primary">African Nurses</span>
             </h1>
             <p className="text-xl text-gray-300 leading-relaxed max-w-2xl mx-auto mb-10">
-              World-class training that sees you, your skin, your patients, and your ambitions. 
+              World-class training that sees you, your skin, your patients, and your ambitions.
               Every course is designed with the African nursing experience at its centre.
             </p>
 
@@ -405,7 +405,7 @@ const Courses = () => {
           <motion.div initial={{ opacity: 0, y: 20 }} whileInView={{ opacity: 1, y: 0 }} viewport={{ once: true }}>
             <h2 className="text-4xl font-bold text-white mb-4">Not Sure Which Course Is Right For You?</h2>
             <p className="text-gray-300 text-lg mb-10">
-              Speak to one of our nurse advisors — a real nurse, not a salesperson. We'll help you find the best fit.
+              Speak to one of our nurse advisors - a real nurse, not a salesperson. We'll help you find the best fit.
             </p>
             <div className="flex flex-wrap justify-center gap-6">
               <a href="mailto:academy@nursehub.africa" className="flex items-center gap-2 bg-white text-navy px-8 py-4 rounded-full font-bold hover:bg-primary hover:text-white transition-all shadow-xl">
