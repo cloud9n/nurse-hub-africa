@@ -60,13 +60,13 @@ Every mama deserves expert care
 Card Description (Full):
 Nigeria: 512 maternal deaths per 1000 births. UK: 7 per 1000. The gap isn't knowledge—it's access.
 
-Mama Aid is our answer. Through AI-powered WhatsApp navigation, we connect diaspora nurses with expectant mothers across Africa. One nurse can now support 50-100 mothers instead of 5-10, because intelligent technology handles routine questions while humans focus on urgent cases and emotional support.
+Mama Aid is our answer. Through AI-powered WhatsApp navigation, we connect diaspora nurses with expectant mothers across Africa. One nurse can now support 20-50 mothers instead of 5-10, because intelligent technology handles routine questions while humans focus on urgent cases and emotional support.
 
 The result? Free, expert healthcare guidance for mothers who need it most. Life-saving triage that escalates emergencies instantly. And diaspora nurses finally able to give back to their home communities at scale.
 
 This is healthcare knowledge exchange powered by technology, driven by compassion, and scaled for impact.
 Key Stats (Display in small badges or icons):
-• 50-100 mothers per navigator
+• 20-50 mothers per navigator
 • £4.50 per mother/month (vs £50+ manual care)
 • Free. Always. For mothers.
 

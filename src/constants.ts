@@ -58,7 +58,7 @@ export const PROGRAMMES: Programme[] = [
     title: 'Mama Aid',
     tagline: 'Every mama deserves expert care',
     eyebrow: 'DIGITAL HEALTH NAVIGATION',
-    description: 'Through AI-powered WhatsApp navigation, we connect diaspora nurses with expectant mothers across Africa. One nurse can now support 50-100 mothers, providing free expert healthcare guidance and life-saving triage.',
+    description: 'Through AI-powered navigation, we connect diaspora nurses with expectant mothers across Africa. One nurse can now support 20-50 mothers, providing free expert healthcare guidance and life-saving triage.',
     category: 'Digital Health',
     image: '/assets/images/community_outreach.png',
     stats: [
