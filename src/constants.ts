@@ -72,7 +72,7 @@ export const PROGRAMMES: Programme[] = [
     title: 'NHA Academy',
     tagline: "Build the career you've always wanted",
     eyebrow: 'PROFESSIONAL EDUCATION',
-    description: 'World-class hybrid training (online theory + hands-on practice). We specialize in Medical Aesthetics (Level 7), Clinical Skills, Business Entrepreneurship, and Leadership.',
+    description: 'World-class hybrid training (online theory + hands-on practice). We specialize in Medical Aesthetics (Level 5), Clinical Skills, Business Entrepreneurship, and Leadership.',
     category: 'Education',
     image: '/assets/images/training_workshop.png',
     features: [
