@@ -89,7 +89,7 @@ export const PROGRAMMES: Programme[] = [
     eyebrow: 'STORYTELLING & MEDIA',
     description: 'Where African nursing stories come alive. We publish in-depth profiles, migration guides, and spotlights on innovation happening across the continent. Telling our real stories, for us.',
     category: 'Media',
-    image: '/event-photos/IMG_8991.PNG',
+    image: '/event-photos/IMG_9068.PNG',
     comingSoon: true,
   },
   {

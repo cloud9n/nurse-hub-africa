@@ -55,7 +55,7 @@ const Home = () => {
             >
               <div className="aspect-square rounded-[3rem] overflow-hidden shadow-2xl">
                 <img
-                  src="/event-photos/IMG_8988.PNG"
+                  src="/event-photos/IMG_9031.PNG"
                   alt="African Nurses Excellence"
                   className="w-full h-full object-cover"
                   referrerPolicy="no-referrer"

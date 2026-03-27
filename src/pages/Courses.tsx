@@ -17,7 +17,7 @@ const courses = [
     students: '1,200+',
     rating: 4.9,
     reviews: 340,
-    image: '/event-photos/IMG_9014.PNG',
+    image: '/event-photos/IMG_9076.PNG',
     overview: `This comprehensive Level 6 programme is designed exclusively for registered nurses who want to specialise in medical aesthetics. Uniquely tailored to melanin-rich and African skin types, this course bridges the gap between clinical nursing excellence and the fast-growing aesthetics industry.
 
 You will graduate fully equipped to offer botulinum toxin, dermal fillers, skin rejuvenation treatments and more - all within a safe, evidence-based clinical framework.`,
@@ -61,7 +61,7 @@ You will graduate fully equipped to offer botulinum toxin, dermal fillers, skin 
     students: '3,000+',
     rating: 4.8,
     reviews: 210,
-    image: '/event-photos/IMG_9015.PNG',
+    image: '/event-photos/IMG_9091.PNG',
     overview: `Tailored for African nurses in the diaspora returning to practice, or those stepping into new clinical environments. This fully online course refreshes essential clinical competencies, highlights differences in healthcare systems, and prepares you to perform confidently from day one.`,
     whyChoose: [
       'Purpose-built for diaspora nurses navigating new healthcare systems',
@@ -101,7 +101,7 @@ You will graduate fully equipped to offer botulinum toxin, dermal fillers, skin 
     students: '600+',
     rating: 4.9,
     reviews: 140,
-    image: '/event-photos/IMG_9016.PNG',
+    image: '/event-photos/IMG_8988.PNG',
     overview: `This leadership programme is built for African nurses who are ready to move beyond the bedside and into roles of influence - ward manager, matron, CNO, or healthcare entrepreneur. It blends evidence-based leadership theory with African-centred values of community and collective action.`,
     whyChoose: [
       'African-centred leadership framework grounded in ubuntu philosophy',
