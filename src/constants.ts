@@ -63,7 +63,7 @@ export const PROGRAMMES: Programme[] = [
     image: '/event-photos/IMG_8989.PNG',
     stats: [
       { label: 'mothers per navigator', value: '20-50' },
-      { label: 'per mother/month', value: '£4.50' },
+      { label: 'per mother/month', value: '£14.99' },
       { label: 'Always. For mothers.', value: 'Free' },
     ],
   },
@@ -77,7 +77,7 @@ export const PROGRAMMES: Programme[] = [
     image: '/event-photos/IMG_9041.PNG',
     features: [
       'Hybrid learning model',
-      'Level 7 certifications',
+      'Level 6 certifications',
       'Melanin-rich skin focus',
       'Internationally-trained tutors',
     ],

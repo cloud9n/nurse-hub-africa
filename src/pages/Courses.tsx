@@ -13,7 +13,7 @@ const courses = [
     title: 'Level 6 Medical Aesthetics for Nurses',
     subtitle: 'Become A Medical Aesthetics Practitioner',
     price: '£2,490',
-    duration: '6 Months (Hybrid)',
+    duration: '6 weeks (Hybrid)',
     students: '1,200+',
     rating: 4.9,
     reviews: 340,
