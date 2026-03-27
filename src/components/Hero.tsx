@@ -17,7 +17,7 @@ export const Hero = () => {
       {/* Background Image with Overlay */}
       <div className="absolute inset-0 z-0">
         <img
-          src="/assets/images/hero_nurses.png"
+          src="/event-photos/IMG_8987.PNG"
           alt="African Nurses"
           className="w-full h-full object-cover"
           referrerPolicy="no-referrer"

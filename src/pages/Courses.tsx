@@ -10,15 +10,15 @@ const courses = [
     id: 'medical-aesthetics',
     badge: 'Most Popular',
     badgeColor: 'bg-primary text-white',
-    title: 'Level 7 Medical Aesthetics for Nurses',
+    title: 'Level 6 Medical Aesthetics for Nurses',
     subtitle: 'Become A Medical Aesthetics Practitioner',
     price: '£2,490',
     duration: '6 Months (Hybrid)',
     students: '1,200+',
     rating: 4.9,
     reviews: 340,
-    image: '/assets/images/training_workshop.png',
-    overview: `This comprehensive Level 7 programme is designed exclusively for registered nurses who want to specialise in medical aesthetics. Uniquely tailored to melanin-rich and African skin types, this course bridges the gap between clinical nursing excellence and the fast-growing aesthetics industry.
+    image: '/event-photos/IMG_9014.PNG',
+    overview: `This comprehensive Level 6 programme is designed exclusively for registered nurses who want to specialise in medical aesthetics. Uniquely tailored to melanin-rich and African skin types, this course bridges the gap between clinical nursing excellence and the fast-growing aesthetics industry.
 
 You will graduate fully equipped to offer botulinum toxin, dermal fillers, skin rejuvenation treatments and more - all within a safe, evidence-based clinical framework.`,
     whyChoose: [
@@ -38,7 +38,7 @@ You will graduate fully equipped to offer botulinum toxin, dermal fillers, skin 
       { module: 'Module 6', title: 'Business, Ethics & Clinic Management', hours: '15 hrs' },
     ],
     outcomes: [
-      'Level 7 Certificate in Medical Aesthetics',
+      'Level 6 Certificate in Medical Aesthetics',
       'Insurance-ready qualification recognised by leading providers',
       'Competency to perform 10+ aesthetic procedures safely',
       'A business plan for your own aesthetics practice',
@@ -47,7 +47,7 @@ You will graduate fully equipped to offer botulinum toxin, dermal fillers, skin 
       { q: 'Do I need to be a registered nurse?', a: 'Yes. This course is exclusively for NMC-registered nurses and midwives. It builds on your existing clinical foundation.' },
       { q: 'What are the clinic days like?', a: 'Clinic days are held at our partner training centres. You\'ll practice on models under direct supervision of experienced practitioners.' },
       { q: 'Can I get funding or payment plans?', a: 'Yes - we offer flexible payment plans. Contact us to discuss options including NHS CPD funding routes.' },
-      { q: 'Is the qualification recognised internationally?', a: 'The Level 7 is UK-accredited. We also provide guidance for nurses seeking recognition in their home country.' },
+      { q: 'Is the qualification recognised internationally?', a: 'The Level 6 is UK-accredited. We also provide guidance for nurses seeking recognition in their home country.' },
     ],
   },
   {
@@ -61,7 +61,7 @@ You will graduate fully equipped to offer botulinum toxin, dermal fillers, skin 
     students: '3,000+',
     rating: 4.8,
     reviews: 210,
-    image: '/assets/images/mentorship_nurse.png',
+    image: '/event-photos/IMG_9015.PNG',
     overview: `Tailored for African nurses in the diaspora returning to practice, or those stepping into new clinical environments. This fully online course refreshes essential clinical competencies, highlights differences in healthcare systems, and prepares you to perform confidently from day one.`,
     whyChoose: [
       'Purpose-built for diaspora nurses navigating new healthcare systems',
@@ -101,7 +101,7 @@ You will graduate fully equipped to offer botulinum toxin, dermal fillers, skin 
     students: '600+',
     rating: 4.9,
     reviews: 140,
-    image: '/assets/images/community_outreach.png',
+    image: '/event-photos/IMG_9016.PNG',
     overview: `This leadership programme is built for African nurses who are ready to move beyond the bedside and into roles of influence - ward manager, matron, CNO, or healthcare entrepreneur. It blends evidence-based leadership theory with African-centred values of community and collective action.`,
     whyChoose: [
       'African-centred leadership framework grounded in ubuntu philosophy',
@@ -141,7 +141,7 @@ You will graduate fully equipped to offer botulinum toxin, dermal fillers, skin 
     students: '800+',
     rating: 4.9,
     reviews: 190,
-    image: '/assets/images/impact_nurse.png',
+    image: '/event-photos/IMG_9017.PNG',
     overview: `A structured journey from foundational knowledge to clinical mastery. No previous experience required - we take you from complete beginner to confident, qualified skin professional.\n\nThis is where successful skin professionals begin their journey. Progress through four comprehensive levels, each building on the last, until you have both the clinical skills and the business acumen to thrive.`,
     whyChoose: [
       'No previous experience required - open to complete beginners',
@@ -204,8 +204,8 @@ const CourseCard: React.FC<CourseCardProps> = ({ course, index }) => {
 
             <div className="flex flex-wrap gap-6 mb-8 text-sm text-gray-600">
               <span className="flex items-center gap-2"><Clock className="w-4 h-4 text-primary" />{course.duration}</span>
-              <span className="flex items-center gap-2"><Users className="w-4 h-4 text-primary" />{course.students} enrolled</span>
-              <span className="flex items-center gap-2"><Star className="w-4 h-4 text-yellow-400 fill-yellow-400" />{course.rating} ({course.reviews} reviews)</span>
+               {/* <span className="flex items-center gap-2"><Users className="w-4 h-4 text-primary" />{course.students} enrolled</span> */}
+              <span className="flex items-center gap-2 font-bold text-primary">COMING SOON</span>
             </div>
 
             <p className="text-gray-600 leading-relaxed whitespace-pre-line mb-8">{course.overview}</p>
@@ -213,9 +213,10 @@ const CourseCard: React.FC<CourseCardProps> = ({ course, index }) => {
             <div className="flex flex-wrap gap-4">
               <a
                 href="/contact"
-                className="bg-primary text-white px-8 py-3 rounded-full font-bold hover:bg-opacity-90 transition-all shadow-lg flex items-center gap-2"
+                className="bg-primary/50 text-white px-8 py-3 rounded-full font-bold cursor-not-allowed flex items-center gap-2"
+                onClick={(e) => e.preventDefault()}
               >
-                Enrol Now - {course.price} <ArrowRight className="w-4 h-4" />
+                Enrol Now - Coming Soon <ArrowRight className="w-4 h-4" />
               </a>
               <a
                 href="/contact"
@@ -235,7 +236,7 @@ const CourseCard: React.FC<CourseCardProps> = ({ course, index }) => {
 
             <div className="bg-navy rounded-[2rem] p-8 text-white">
               <p className="text-white/60 uppercase tracking-wider text-xs font-bold mb-1">Course Investment</p>
-              <p className="text-4xl font-bold text-white mb-1">{course.price}</p>
+              <p className="text-4xl font-bold text-white mb-1">Coming Soon</p>
               <p className="text-white/50 text-sm mb-6">Payment plans available · Talk to us</p>
               <div className="space-y-3">
                 {[`Duration: ${course.duration}`, `Group size: max 8`, `Certificate included`, `Lifetime community access`].map(f => (
@@ -349,7 +350,7 @@ const Courses = () => {
 
             <div className="flex flex-wrap justify-center gap-8 text-white/70 text-sm">
               {[
-                { icon: <Users className="w-5 h-5 text-primary" />, label: '5,000+ nurses trained' },
+                { icon: <Users className="w-5 h-5 text-primary" />, label: '100+ Nurses trained' },
                 { icon: <Globe className="w-5 h-5 text-primary" />, label: 'Recognised across 20+ countries' },
                 { icon: <Star className="w-5 h-5 text-yellow-400 fill-yellow-400" />, label: '4.9/5 average rating' },
               ].map((item) => (

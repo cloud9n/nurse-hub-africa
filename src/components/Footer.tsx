@@ -24,7 +24,7 @@ export const Footer = () => {
               <a href="https://instagram.com/nursehubafrica" target="_blank" rel="noopener noreferrer" className="hover:text-primary transition-colors">
                 <Instagram className="w-5 h-5" />
               </a>
-              <a href="mailto:nursehubafr@gmail.com" className="hover:text-primary transition-colors">
+              <a href="mailto:info@nursehubafrica.com" className="hover:text-primary transition-colors">
                 <Mail className="w-5 h-5" />
               </a>
             </div>
@@ -52,7 +52,7 @@ export const Footer = () => {
               </li>
               <li className="flex items-center space-x-3">
                 <Mail className="w-5 h-5 text-primary shrink-0" />
-                <span>nursehubafr@gmail.com</span>
+                <span>info@nursehubafrica.com</span>
               </li>
               <li className="flex items-center space-x-3">
                 <Phone className="w-5 h-5 text-primary shrink-0" />

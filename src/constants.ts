@@ -60,7 +60,7 @@ export const PROGRAMMES: Programme[] = [
     eyebrow: 'DIGITAL HEALTH NAVIGATION',
     description: 'Through AI-powered navigation, we connect diaspora nurses with expectant mothers across Africa. One nurse can now support 20-50 mothers, providing free expert healthcare guidance and life-saving triage.',
     category: 'Digital Health',
-    image: '/assets/images/community_outreach.png',
+    image: '/event-photos/IMG_8989.PNG',
     stats: [
       { label: 'mothers per navigator', value: '20-50' },
       { label: 'per mother/month', value: '£4.50' },
@@ -74,7 +74,7 @@ export const PROGRAMMES: Programme[] = [
     eyebrow: 'PROFESSIONAL EDUCATION',
     description: 'World-class hybrid training (online theory + hands-on practice). We specialize in Medical Aesthetics (Level 5), Clinical Skills, Business Entrepreneurship, and Leadership.',
     category: 'Education',
-    image: '/assets/images/training_workshop.png',
+    image: '/event-photos/IMG_8990.PNG',
     features: [
       'Hybrid learning model',
       'Level 7 certifications',
@@ -83,13 +83,13 @@ export const PROGRAMMES: Programme[] = [
     ],
   },
   {
-    id: 'ubuntu-magazine',
-    title: 'Ubuntu Magazine',
+    id: 'nke-africa-magazine',
+    title: 'Nke Africa Magazine',
     tagline: 'Your stories. Your voices. Your magazine.',
     eyebrow: 'STORYTELLING & MEDIA',
     description: 'Where African nursing stories come alive. We publish in-depth profiles, migration guides, and spotlights on innovation happening across the continent. Telling our real stories, for us.',
     category: 'Media',
-    image: '/assets/images/mentorship_nurse.png',
+    image: '/event-photos/IMG_8991.PNG',
     comingSoon: true,
   },
   {
@@ -99,7 +99,7 @@ export const PROGRAMMES: Programme[] = [
     eyebrow: 'RECOGNITION & CELEBRATION',
     description: 'Honoring outstanding African nurses across clinical practice, innovation, leadership, research, and community impact. Excellence anywhere becomes recognized everywhere.',
     category: 'Recognition',
-    image: '/assets/images/impact_nurse.png',
+    image: '/event-photos/IMG_8988.PNG',
     awardCategories: [
       'Nurse of the Year',
       'Innovation in Practice',

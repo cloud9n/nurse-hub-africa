@@ -126,7 +126,7 @@ const GetInvolved = () => {
             </div>
             <div className="flex-1 relative hidden lg:block">
               <img
-                src="/assets/images/community_outreach.png"
+                src="/event-photos/IMG_8989.PNG"
                 alt="Support"
                 className="w-full h-full object-cover"
                 referrerPolicy="no-referrer"

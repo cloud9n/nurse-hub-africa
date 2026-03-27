@@ -55,7 +55,7 @@ const Home = () => {
             >
               <div className="aspect-square rounded-[3rem] overflow-hidden shadow-2xl">
                 <img
-                  src="/assets/images/impact_nurse.png"
+                  src="/event-photos/IMG_8988.PNG"
                   alt="African Nurses Excellence"
                   className="w-full h-full object-cover"
                   referrerPolicy="no-referrer"
@@ -98,7 +98,7 @@ const Home = () => {
               {[
                 { title: 'Mama Aid', desc: 'A nurse in London supports 50 mothers in Lagos via AI navigation.' },
                 { title: 'NHA Academy', desc: 'Access training across Africa previously only available abroad.' },
-                { title: 'Ubuntu Magazine', desc: 'Success stories in Nairobi inspire students in Johannesburg.' },
+                { title: 'Nke Africa Magazine', desc: 'Success stories in Nairobi inspire students in Johannesburg.' },
                 { title: 'Excellence Everywhere', desc: 'Awards ensure brilliance anywhere is recognized everywhere.' }
               ].map((item, idx) => (
                 <motion.div
@@ -249,7 +249,7 @@ const Home = () => {
                       to={prog.id === 'nha-academy' ? '/courses' : '/contact'}
                       className="inline-flex items-center text-primary font-bold hover:underline group/link"
                     >
-                      {prog.id === 'ubuntu-magazine' ? 'Subscribe for Launch' :
+                      {prog.id === 'nke-africa-magazine' ? 'Subscribe for Launch' :
                         prog.id === 'awards' ? 'View Awards' :
                           prog.id === 'nha-academy' ? 'Explore Courses' : 'Learn How It Works'}
                       <ArrowRight className="ml-2 w-5 h-5 group-hover/link:translate-x-1 transition-transform" />
@@ -346,6 +346,50 @@ const Home = () => {
                 </Link>
               </div>
             </div>
+          </div>
+        </div>
+      </section>
+      {/* Our Partners Section */}
+      <section className="py-24 bg-warm-white">
+        <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+          <div className="text-center mb-16">
+            <h2 className="text-primary font-bold uppercase tracking-widest text-sm mb-4">Collaborating for Impact</h2>
+            <h3 className="text-4xl font-bold text-navy mb-6">Our Partners</h3>
+            <p className="text-gray-600 text-lg max-w-2xl mx-auto">
+              We work with leading healthcare institutions, government bodies, and international organizations to amplify our reach and impact.
+            </p>
+          </div>
+
+          <div className="flex flex-wrap justify-center gap-12 items-center opacity-70 hover:opacity-100 transition-opacity">
+            {[
+              { name: '7keema', logo: '/partners/7keema.jpeg' },
+              { name: 'African Women in Leadership', logo: '/partners/african women in leadership.jpeg' },
+              { name: 'AIT', logo: '/partners/ait.jpeg' },
+              { name: 'Ambassade de France', logo: '/partners/ambassade de france .jpeg' },
+              { name: 'Arewa Nurses', logo: '/partners/arewa nurses.jpeg' },
+              { name: 'Deda Hospital', logo: '/partners/deda hospital.jpeg' },
+              { name: 'Federal Ministry of Health', logo: '/partners/federal ministry of health.jpeg' },
+              { name: 'Nigeria Health Watch', logo: '/partners/nigerial health watch.jpeg' },
+              { name: 'Nursing and Midwifery Council', logo: '/partners/nursing and midwifery council.jpeg' },
+              { name: 'Safe Sanitary Foundation', logo: '/partners/safe sanitary foundation.jpeg' },
+              { name: 'Sierra Leone High Commission', logo: '/partners/sierra leone high commission.jpeg' },
+            ].map((partner, i) => (
+              <motion.div
+                key={partner.name}
+                initial={{ opacity: 0 }}
+                whileInView={{ opacity: 1 }}
+                viewport={{ once: true }}
+                transition={{ delay: i * 0.05 }}
+                className="h-16 md:h-20 grayscale hover:grayscale-0 transition-all duration-300"
+              >
+                <img
+                  src={partner.logo}
+                  alt={partner.name}
+                  className="h-full w-auto object-contain"
+                  title={partner.name}
+                />
+              </motion.div>
+            ))}
           </div>
         </div>
       </section>

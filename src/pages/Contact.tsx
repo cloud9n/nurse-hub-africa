@@ -71,7 +71,7 @@ const Contact = () => {
                     </div>
                     <div>
                       <h4 className="font-bold text-navy text-xl mb-1">Email Us</h4>
-                      <p className="text-gray-600">nursehubafr@gmail.com</p>
+                      <p className="text-gray-600">info@nursehubafrica.com</p>
                     </div>
                   </div>
 
