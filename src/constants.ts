@@ -74,7 +74,7 @@ export const PROGRAMMES: Programme[] = [
     eyebrow: 'PROFESSIONAL EDUCATION',
     description: 'World-class hybrid training (online theory + hands-on practice). We specialize in Medical Aesthetics (Level 5), Clinical Skills, Business Entrepreneurship, and Leadership.',
     category: 'Education',
-    image: '/event-photos/IMG_8990.PNG',
+    image: '/event-photos/IMG_9041.PNG',
     features: [
       'Hybrid learning model',
       'Level 7 certifications',
