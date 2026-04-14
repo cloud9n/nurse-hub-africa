@@ -180,6 +180,11 @@ const About = () => {
                 name: 'Francisca Nwogwu',
                 role: 'Programmes Manager',
                 image: '/team/WhatsApp Image 2026-03-26 at 11.59.26 PM.jpeg'
+              },
+               {
+                name: 'Mrs Prisca Murtala',
+                role: 'Programmes Manager',
+                image: '/team/MRS PRISCA MURTALA.jpg'
               }
             ].map((member, i) => (
               <motion.div
