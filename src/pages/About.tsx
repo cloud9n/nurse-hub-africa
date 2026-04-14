@@ -183,7 +183,7 @@ const About = () => {
               },
                {
                 name: 'Mrs Prisca Murtala',
-                role: 'Programmes Manager',
+                role: '',
                 image: '/team/MRS PRISCA MURTALA.jpg'
               }
             ].map((member, i) => (
