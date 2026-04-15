@@ -34,7 +34,7 @@ With a strong background in technology, healthcare innovation, and stakeholder e
     },
     {
       name: 'Mrs Prisca Murtala',
-      role: 'Lead Trainer, Body Treatments (Med. Aesthetics',
+      role: 'Lead Trainer, Body Treatments (Med. Aesthetics)',
       image: '/team/MRS PRISCA MURTALA.jpg',
       bio: `Prisca Murtala is a wellness and beauty professional with over seven years of experience in the spa and skincare industry. Passionate about holistic treatments and natural skincare, she has trained and mentored over 1,000 students — many now practicing professionals in the field. Her mission is to empower women with the practical skills and confidence to build successful careers in beauty and wellness.`
     }
