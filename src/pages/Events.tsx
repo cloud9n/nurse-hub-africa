@@ -1,9 +1,21 @@
-import React from 'react';
+import React, { useState } from 'react';
 import { motion } from 'motion/react';
 import { EVENTS } from '../constants';
 import { Calendar, MapPin, ExternalLink, Clock } from 'lucide-react';
+import { EventModal } from '../components/EventModal';
+import { Event } from '../types';
 
 const Events = () => {
+  const [selectedEvent, setSelectedEvent] = useState<Event | null>(null);
+  const [isModalOpen, setIsModalOpen] = useState(false);
+
+  const handleRegisterClick = (event: Event) => {
+    if (event.link && event.link !== '#') {
+      setSelectedEvent(event);
+      setIsModalOpen(true);
+    }
+  };
+
   return (
     <main className="pt-24">
       {/* Hero */}
@@ -59,8 +71,12 @@ const Events = () => {
                 </div>
 
                 <div className="w-full lg:w-auto">
-                  <button className="w-full lg:w-auto bg-navy text-white px-10 py-4 rounded-full font-bold hover:bg-primary transition-all flex items-center justify-center group">
-                    Register Now
+                  <button 
+                    onClick={() => handleRegisterClick(event)}
+                    className="w-full lg:w-auto bg-navy text-white px-10 py-4 rounded-full font-bold hover:bg-primary transition-all flex items-center justify-center group disabled:opacity-50 disabled:cursor-not-allowed"
+                    disabled={!event.link || event.link === '#'}
+                  >
+                    {event.link && event.link !== '#' ? 'Register Now' : 'Coming Soon'}
                     <ExternalLink className="ml-2 w-5 h-5 group-hover:scale-110 transition-transform" />
                   </button>
                 </div>
@@ -88,6 +104,16 @@ const Events = () => {
           </button>
         </div>
       </section>
+
+      {/* Registration Modal */}
+      {selectedEvent && (
+        <EventModal
+          isOpen={isModalOpen}
+          onClose={() => setIsModalOpen(false)}
+          formUrl={selectedEvent.link}
+          title={selectedEvent.title}
+        />
+      )}
     </main>
   );
 };

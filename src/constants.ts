@@ -144,6 +144,14 @@ export const BLOG_POSTS: BlogPost[] = [
 ];
 
 export const EVENTS: Event[] = [
+    {
+    id: '3',
+    title: 'London City Mixer',
+    date: 'July, 2026',
+    location: 'London',
+    description: 'An upcoming networking event for healthcare professionals in London.',
+    link: 'https://forms.gle/hdG8CMsGSD7RnqHK6',
+  },
   {
     id: '1',
     title: 'Nurse Hub Africa Launching Event',

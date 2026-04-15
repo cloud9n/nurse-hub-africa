@@ -1,8 +1,50 @@
-import React from 'react';
+import React, { useState } from 'react';
 import { motion } from 'motion/react';
-import { CheckCircle2, Target, Eye, Award, History, Users } from 'lucide-react';
+import { CheckCircle2, Target, Eye, Award, History, Users, Plus } from 'lucide-react';
+import { TeamModal } from '../components/TeamModal';
 
 const About = () => {
+  const [selectedMember, setSelectedMember] = useState<any>(null);
+  const [isModalOpen, setIsModalOpen] = useState(false);
+
+  const teamMembers = [
+    {
+      name: 'Mrs. Vivian Nwogu',
+      role: 'Founder & Lead Director',
+      image: '/team/founder.jpeg',
+      bio: `Vivian Nwogu is a registered nurse, entrepreneur, and Pan-African healthcare advocate holding active nursing licences in the UK, New Zealand, Australia, and Nigeria. She is the Founder and Director of Nurse Hub Africa CIC — a UK-registered social enterprise working to bridge the gap between diaspora nursing expertise and African healthcare communities. 
+
+Through NHA’s integrated programmes — including Mama Aid+, NHA Academy, Nke Africa Magazine, and the Pan-African Healthcare Awards — she is building healthcare infrastructure that empowers nurses, trains practitioners, and improves maternal and chronic care outcomes across Africa. Driven by a deep sense of mission, Vivian’s work sits at the intersection of professional excellence, social impact, and Pan-African identity.`
+    },
+    {
+      name: 'Mr Thaddeus O. Osuagwu',
+      role: 'Director Partnership & International Relations',
+      image: '/team/thaddeus.jpeg',
+      bio: `Thaddeus Osuagwu serves as the Director of Partnerships & International Relations at NHA (Nurse Hub Africa), a community impact Company dedicated connecting and promoting African nurses worldwide for better healthcare knowledge exchange. 
+
+In this role, he leads strategic collaborations with international organizations, healthcare institutions, and development partners, driving initiatives that promote capacity building, professional development, and improved healthcare delivery systems for nurses. 
+
+With a strong background in technology, healthcare innovation, and stakeholder engagement, Thaddeus is passionate about building global partnerships that strengthen the nursing workforce and create sustainable impact across communities.`
+    },
+    {
+      name: 'Francisca Nneoma',
+      role: 'Programmes Manager',
+      image: '/team/WhatsApp Image 2026-03-26 at 11.59.26 PM.jpeg',
+      bio: `Francisca Nneoma is the Programmes Manager at Nurse Hub Africa, where she oversees the coordination and implementation of our various initiatives. With a strong commitment to healthcare excellence, she works to ensure that all NHA programmes are delivered effectively and meet the needs of our community.`
+    },
+    {
+      name: 'Mrs Prisca Murtala',
+      role: 'Lead Trainer, Body',
+      image: '/team/MRS PRISCA MURTALA.jpg',
+      bio: `Prisca Murtala is a wellness and beauty professional with over seven years of experience in the spa and skincare industry. Passionate about holistic treatments and natural skincare, she has trained and mentored over 1,000 students — many now practicing professionals in the field. Her mission is to empower women with the practical skills and confidence to build successful careers in beauty and wellness.`
+    }
+  ];
+
+  const handleMemberClick = (member: any) => {
+    setSelectedMember(member);
+    setIsModalOpen(true);
+  };
+
   return (
     <main className="pt-24">
       {/* Hero Section */}
@@ -164,52 +206,46 @@ const About = () => {
               A diverse group of healthcare professionals and innovators dedicated to the empowerment of African nurses.
             </p>
           </div>
-          <div className="grid grid-cols-1 md:grid-cols-3 gap-12">
-            {[
-              {
-                name: 'Mrs. Vivian Nwogu',
-                role: 'Founder & Lead Director',
-                image: '/team/founder.jpeg'
-              },
-              {
-                name: 'Mr Thaddeus O. Osuagwu',
-                role: 'Director Partnership & International Relations',
-                image: '/team/thaddeus.jpeg'
-              },
-              {
-                name: 'Francisca Nwogwu',
-                role: 'Programmes Manager',
-                image: '/team/WhatsApp Image 2026-03-26 at 11.59.26 PM.jpeg'
-              },
-               {
-                name: 'Mrs Prisca Murtala',
-                role: 'Director, Training/Mentoship(Aesthetics)',
-                image: '/team/MRS PRISCA MURTALA.jpg'
-              }
-            ].map((member, i) => (
+          <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-12">
+            {teamMembers.map((member, i) => (
               <motion.div
                 key={member.name}
                 initial={{ opacity: 0, scale: 0.95 }}
                 whileInView={{ opacity: 1, scale: 1 }}
                 viewport={{ once: true }}
                 transition={{ delay: i * 0.1 }}
-                className="group"
+                className="group cursor-pointer"
+                onClick={() => handleMemberClick(member)}
               >
                 <div className="relative aspect-[4/5] rounded-[2.5rem] overflow-hidden mb-6 shadow-xl">
                   <img
                     src={member.image}
                     alt={member.name}
-                    className="w-full h-full object-cover group-hover:scale-110 transition-transform duration-700"
+                    className="w-full h-full object-cover transition-transform duration-500 group-hover:scale-110"
                   />
-                  <div className="absolute inset-0 bg-gradient-to-t from-navy/60 to-transparent opacity-0 group-hover:opacity-100 transition-opacity" />
+                  <div className="absolute inset-0 bg-navy/20 group-hover:bg-navy/40 transition-colors" />
+                  <div className="absolute bottom-6 right-6 w-12 h-12 bg-white rounded-full flex items-center justify-center text-primary shadow-lg transform translate-y-4 opacity-0 group-hover:translate-y-0 group-hover:opacity-100 transition-all">
+                    <Plus className="w-6 h-6" />
+                  </div>
                 </div>
-                <h4 className="text-2xl font-bold text-navy mb-1">{member.name}</h4>
-                <p className="text-primary font-bold uppercase tracking-widest text-xs">{member.role}</p>
+                <div className="text-center">
+                  <h4 className="text-xl font-bold text-navy mb-1">{member.name}</h4>
+                  <p className="text-primary font-semibold text-sm uppercase tracking-widest">{member.role}</p>
+                </div>
               </motion.div>
             ))}
           </div>
         </div>
       </section>
+
+      {/* Team Modal */}
+      {selectedMember && (
+        <TeamModal
+          isOpen={isModalOpen}
+          onClose={() => setIsModalOpen(false)}
+          member={selectedMember}
+        />
+      )}
     </main>
   );
 };
