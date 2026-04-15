@@ -18,7 +18,7 @@ Through NHA’s integrated programmes — including Mama Aid+, NHA Academy, Nke 
     },
     {
       name: 'Mr Thaddeus O. Osuagwu',
-      role: 'Director Partnership & International Relations',
+      role: "Co-Founder & Director Partnership & Int'l Relations",
       image: '/team/thaddeus.jpeg',
       bio: `Thaddeus Osuagwu serves as the Director of Partnerships & International Relations at NHA (Nurse Hub Africa), a community impact Company dedicated connecting and promoting African nurses worldwide for better healthcare knowledge exchange. 
 
@@ -27,14 +27,14 @@ In this role, he leads strategic collaborations with international organizations
 With a strong background in technology, healthcare innovation, and stakeholder engagement, Thaddeus is passionate about building global partnerships that strengthen the nursing workforce and create sustainable impact across communities.`
     },
     {
-      name: 'Francisca Nneoma',
+      name: 'Francisca Nneoma N',
       role: 'Programmes Manager',
       image: '/team/WhatsApp Image 2026-03-26 at 11.59.26 PM.jpeg',
       bio: `Francisca Nneoma is the Programmes Manager at Nurse Hub Africa, where she oversees the coordination and implementation of our various initiatives. With a strong commitment to healthcare excellence, she works to ensure that all NHA programmes are delivered effectively and meet the needs of our community.`
     },
     {
       name: 'Mrs Prisca Murtala',
-      role: 'Lead Trainer, Body',
+      role: 'Lead Trainer, Body Treatments (Med. Aesthetics',
       image: '/team/MRS PRISCA MURTALA.jpg',
       bio: `Prisca Murtala is a wellness and beauty professional with over seven years of experience in the spa and skincare industry. Passionate about holistic treatments and natural skincare, she has trained and mentored over 1,000 students — many now practicing professionals in the field. Her mission is to empower women with the practical skills and confidence to build successful careers in beauty and wellness.`
     }
