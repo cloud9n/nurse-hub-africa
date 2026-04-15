@@ -145,7 +145,7 @@ export const BLOG_POSTS: BlogPost[] = [
 
 export const EVENTS: Event[] = [
     {
-    id: '3',
+    id: '1',
     title: 'London City Mixer',
     date: 'July, 2026',
     location: 'London',
@@ -153,7 +153,7 @@ export const EVENTS: Event[] = [
     link: 'https://forms.gle/hdG8CMsGSD7RnqHK6',
   },
   {
-    id: '1',
+    id: '2',
     title: 'Nurse Hub Africa Launching Event',
     date: 'September 2026',
     location: 'London',
@@ -161,7 +161,7 @@ export const EVENTS: Event[] = [
     link: '#',
   },
   {
-    id: '2',
+    id: '3',
     title: 'The PAHP Awards and Pan-African Healthcare Summit',
     date: 'August 2027',
     location: 'TBA',
@@ -169,7 +169,7 @@ export const EVENTS: Event[] = [
     link: '#',
   },
   {
-    id: '3',
+    id: '4',
     title: 'London City Mixer (Networking Event)',
     date: 'Coming Soon',
     location: 'London',

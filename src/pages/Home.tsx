@@ -6,12 +6,14 @@ import { VALUES, PROGRAMMES, TESTIMONIALS } from '../constants';
 import { ArrowRight, CheckCircle2 } from 'lucide-react';
 import { Link } from 'react-router-dom';
 import { FormModal } from '../components/FormModal';
+import { LondonMixerPopup } from '../components/LondonMixerPopup';
 import { useState } from 'react';
 
 const Home = () => {
   const [isModalOpen, setIsModalOpen] = useState(false);
   return (
     <main>
+      <LondonMixerPopup />
       <FormModal
         isOpen={isModalOpen}
         onClose={() => setIsModalOpen(false)}
