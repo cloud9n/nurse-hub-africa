@@ -208,7 +208,7 @@ const CourseCard: React.FC<CourseCardProps> = ({ course, index }) => {
               <span className="flex items-center gap-2 font-bold text-primary">COMING SOON</span>
             </div>
 
-            <p className="text-gray-600 leading-relaxed whitespace-pre-line mb-8">{course.overview}</p>
+            {/* <p className="text-gray-600 leading-relaxed whitespace-pre-line mb-8">{course.overview}</p> */}
 
             <div className="flex flex-wrap gap-4">
               <a
@@ -256,14 +256,14 @@ const CourseCard: React.FC<CourseCardProps> = ({ course, index }) => {
             <h3 className="text-2xl font-bold text-navy mb-6 flex items-center gap-3">
               <Shield className="w-6 h-6 text-primary" /> Why Choose This Course
             </h3>
-            <div className="space-y-3">
+            {/* <div className="space-y-3">
               {course.whyChoose.map((item) => (
                 <div key={item} className="flex items-start gap-3 p-4 bg-primary/5 rounded-2xl border border-primary/10">
                   <CheckCircle2 className="w-5 h-5 text-primary shrink-0 mt-0.5" />
                   <p className="text-gray-700 text-sm leading-relaxed">{item}</p>
                 </div>
               ))}
-            </div>
+            </div> */}
           </motion.div>
 
           {/* Curriculum */}
@@ -271,7 +271,7 @@ const CourseCard: React.FC<CourseCardProps> = ({ course, index }) => {
             <h3 className="text-2xl font-bold text-navy mb-6 flex items-center gap-3">
               <BookOpen className="w-6 h-6 text-primary" /> What You'll Cover
             </h3>
-            <div className="space-y-3">
+            {/* <div className="space-y-3">
               {course.curriculum.map((mod) => (
                 <div key={mod.module} className="flex items-center justify-between p-4 bg-white rounded-2xl border border-gray-100 shadow-sm">
                   <div>
@@ -281,10 +281,10 @@ const CourseCard: React.FC<CourseCardProps> = ({ course, index }) => {
                   <span className="text-xs text-gray-500 bg-gray-100 px-3 py-1 rounded-full whitespace-nowrap">{mod.hours}</span>
                 </div>
               ))}
-            </div>
+            </div> */}
 
             {/* Outcomes */}
-            <div className="mt-8 bg-navy rounded-[2rem] p-6">
+            {/* <div className="mt-8 bg-navy rounded-[2rem] p-6">
               <h4 className="text-white font-bold mb-4 flex items-center gap-2">
                 <Award className="w-5 h-5 text-gold" /> What You'll Graduate With
               </h4>
@@ -294,7 +294,7 @@ const CourseCard: React.FC<CourseCardProps> = ({ course, index }) => {
                   {o}
                 </div>
               ))}
-            </div>
+            </div> */}
           </motion.div>
         </div>
 
@@ -347,7 +347,7 @@ const Courses = () => {
               World-class training that sees you, your skin, your patients, and your ambitions.
               Every course is designed with the African nursing experience at its centre.
             </p>
-
+{/* 
             <div className="flex flex-wrap justify-center gap-8 text-white/70 text-sm">
               {[
                 { icon: <Users className="w-5 h-5 text-primary" />, label: '100+ Nurses trained' },
@@ -356,7 +356,7 @@ const Courses = () => {
               ].map((item) => (
                 <div key={item.label} className="flex items-center gap-2">{item.icon}{item.label}</div>
               ))}
-            </div>
+            </div> */}
           </motion.div>
         </div>
 

@@ -10,7 +10,7 @@ const About = () => {
   const teamMembers = [
     {
       name: 'Mrs. Vivian Nwogu',
-      role: 'Founder & Lead Director',
+      role: 'Founder & CEO',
       image: '/team/founder.jpeg',
       bio: `Vivian Nwogu is a registered nurse, entrepreneur, and Pan-African healthcare advocate holding active nursing licences in the UK, New Zealand, Australia, and Nigeria. She is the Founder and Director of Nurse Hub Africa CIC — a UK-registered social enterprise working to bridge the gap between diaspora nursing expertise and African healthcare communities. 
 
